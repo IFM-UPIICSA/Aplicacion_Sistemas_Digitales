@@ -1,0 +1,100 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design codigo created Wed Oct 11 12:38:04 2017
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   F 
+   1          2        1    Node  N_7 
+   1          2        1    Node  N_8 
+   1          2        1    Node  N_9 
+   1          2        1    Node  N_10 
+   1          2        1    Node  N_11 
+   1          1        1    Node  A_i_0 
+   1          1        1    Node  B_i_0 
+   1          1        1    Node  C_i_0 
+   1          1        1    Node  D_i_0 
+   1/1        1        1    Node  A_c 
+   1/1        1        1    Node  B_c 
+   1/1        1        1    Node  C_c 
+   1/1        1        1    Node  D_c 
+   1          1        1    Node  N_9_i 
+   1          1        1    Node  N_10_i 
+   1          1        1    Node  N_11_i 
+   1          1        1    Node  N_7_i 
+   1          1        1    Node  N_8_i 
+   1          2        1    Node  N_5_0 
+   1          2        1    Node  N_7_1 
+   1          2        1    Node  N_7_2 
+   1          2        1    Node  N_8_1 
+=========
+  23/5          Best P-Term Total: 23
+                       Total Pins: 5
+                      Total Nodes: 22
+            Average P-Term/Output: 1
+
+
+Equations:
+
+F = (N_5_0);
+
+N_7 = (N_7_1 & N_7_2);
+
+N_8 = (N_8_1 & B_i_0);
+
+N_9 = (A_c & C_c);
+
+N_10 = (A_c & B_c);
+
+N_11 = (B_c & C_c);
+
+A_i_0 = (!A_c);
+
+B_i_0 = (!B_c);
+
+C_i_0 = (!C_c);
+
+D_i_0 = (!D_c);
+
+A_c = (A);
+
+B_c = (B);
+
+C_c = (C);
+
+D_c = (D);
+
+N_9_i = (!N_9);
+
+N_10_i = (!N_10);
+
+N_11_i = (!N_11);
+
+N_7_i = (!N_7);
+
+N_8_i = (!N_8);
+
+N_5_0 = (N_7_i & N_8_i);
+
+N_7_1 = (D_i_0 & N_9_i);
+
+N_7_2 = (N_10_i & N_11_i);
+
+N_8_1 = (C_i_0 & A_i_0);
+
+
+Reverse-Polarity Equations:
+
+!F = (!N_5_0);
+
+!A_c = (!A);
+
+!B_c = (!B);
+
+!C_c = (!C);
+
+!D_c = (!D);
+

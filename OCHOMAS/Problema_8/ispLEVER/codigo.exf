@@ -1,0 +1,14 @@
+Section Cross Reference File
+Design 'codigo' created Wed Oct 04 19:15:29 2017
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     A
+        Input     B
+        Input     C
+        Input     D
+        Output     B1
+        Output     B2
+End

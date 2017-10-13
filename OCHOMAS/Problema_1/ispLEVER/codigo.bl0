@@ -1,0 +1,42 @@
+#$ DATE Thu Oct 12 21:19:49 2017
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE codigo
+#$ PINS 5 W:2'ke'  X:3'ke'  Y:4'ke'  Z:5'ke'  F:14'ke' 
+#$ NODES 14 N_6 N_7 N_8 W_i_0 Y_i W_c X_c Y_c Z_c N_6_0 \
+#  N_7_i N_8_i N_5_0 N_8_1 
+.model codigo
+.inputs W.BLIF X.BLIF Y.BLIF Z.BLIF N_6.BLIF N_7.BLIF N_8.BLIF W_i_0.BLIF Y_i.BLIF \
+  W_c.BLIF X_c.BLIF Y_c.BLIF Z_c.BLIF N_6_0.BLIF N_7_i.BLIF N_8_i.BLIF N_5_0.BLIF N_8_1.BLIF  
+.outputs F N_6 N_7 N_8 W_i_0 Y_i W_c X_c Y_c Z_c N_6_0 \
+  N_7_i N_8_i N_5_0 N_8_1
+.names  W.BLIF W_c
+1 1
+.names  X.BLIF X_c
+1 1
+.names  Y.BLIF Y_c
+1 1
+.names  Z.BLIF Z_c
+1 1
+.names  N_5_0.BLIF F
+1 1
+.names  Y_c.BLIF Y_i
+0 1
+.names  N_6.BLIF Y_i.BLIF N_7
+11 1
+.names  W_c.BLIF W_i_0
+0 1
+.names  N_7_i.BLIF N_8_i.BLIF N_5_0
+11 1
+.names  X_c.BLIF Z_c.BLIF N_6_0
+11 1
+.names  N_6_0.BLIF N_6
+0 1
+.names  N_7.BLIF N_7_i
+0 1
+.names  N_8.BLIF N_8_i
+0 1
+.names  N_6_0.BLIF W_i_0.BLIF N_8_1
+11 1
+.names  N_8_1.BLIF Y_c.BLIF N_8
+11 1
+.end

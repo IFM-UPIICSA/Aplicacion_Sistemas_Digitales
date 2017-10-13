@@ -1,0 +1,52 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Tue Oct 03 22:45:23 2017
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch c:/isplever_classic2_0/examples/ochomas/problema 7\codigo.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\isplever_classic2_0\examples\ochomas\problema 7\codigo.srr"
+
+Running codigo|problema 7
+
+Running: Compile on codigo|problema 7
+
+Running: Compile Process on codigo|problema 7
+
+Running: Compile Input on codigo|problema 7
+Copied C:\isplever_classic2_0\examples\ochomas\problema 7\synwork\codigo_comp.srs to C:\isplever_classic2_0\examples\ochomas\problema 7\codigo.srs
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Running: Multi-srs Generator on codigo|problema 7
+Copied C:\isplever_classic2_0\examples\ochomas\problema 7\synwork\codigo_comp.srs to C:\isplever_classic2_0\examples\ochomas\problema 7\synwork\codigo_s.srs
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Copied C:\isplever_classic2_0\examples\ochomas\problema 7\synwork\codigo_mult.srs to C:\isplever_classic2_0\examples\ochomas\problema 7\codigo.srs
+Copied C:\isplever_classic2_0\examples\ochomas\problema 7\codigo.srr to C:\isplever_classic2_0\examples\ochomas\problema 7\codigo.srf
+Complete: Compile Process on codigo|problema 7
+Complete: Compile on codigo|problema 7
+
+Running: Map on codigo|problema 7
+
+Running: Map & Optimize on codigo|problema 7
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Complete: Map on codigo|problema 7
+Complete: Logic Synthesis on codigo|problema 7
+
+exit status=0
+
+exit status=0
+

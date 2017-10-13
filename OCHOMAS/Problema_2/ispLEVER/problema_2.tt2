@@ -1,0 +1,18 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Thu Oct 12 21:18:15 2017
+#$ MODULE codigo
+#$ PINS 5 W:2 X:3 Y:4 Z:5 F:14
+.type fr
+.i 4
+.o 1
+.ilb W X Y Z
+.ob F
+.p 7
+1-1- 1
+-01- 1
+-101 1
+--10 1
+-00- 0
+0111 0
+--00 0
+.end

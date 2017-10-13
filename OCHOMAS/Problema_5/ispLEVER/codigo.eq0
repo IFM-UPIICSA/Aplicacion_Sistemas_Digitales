@@ -1,0 +1,79 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design codigo created Tue Oct 03 20:42:46 2017
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   F 
+   1/1        1        1    Pin   R 
+   1          2        1    Node  un5_f 
+   1          2        1    Node  f 
+   1          1        1    Node  B_i 
+   1          1        1    Node  A_i 
+   1          1        1    Node  C_i 
+   1/1        1        1    Node  A_c 
+   1/1        1        1    Node  B_c 
+   1/1        1        1    Node  C_c 
+   1          1        1    Node  F_c 
+   1          2        1    Node  R_c 
+   1          1        1    Node  f_i 
+   1          1        1    Node  un5_f_i 
+   1          2        1    Node  F_c_0 
+   1          2        1    Node  un5_f_1 
+=========
+  16/5          Best P-Term Total: 16
+                       Total Pins: 5
+                      Total Nodes: 14
+            Average P-Term/Output: 1
+
+
+Equations:
+
+F = (F_c);
+
+R = (R_c);
+
+un5_f = (un5_f_1 & B_c);
+
+f = (A_c & B_i);
+
+B_i = (!B_c);
+
+A_i = (!A_c);
+
+C_i = (!C_c);
+
+A_c = (A);
+
+B_c = (B);
+
+C_c = (C);
+
+F_c = (!F_c_0);
+
+R_c = (B_c & C_c);
+
+f_i = (!f);
+
+un5_f_i = (!un5_f);
+
+F_c_0 = (f_i & un5_f_i);
+
+un5_f_1 = (C_i & A_i);
+
+
+Reverse-Polarity Equations:
+
+!F = (!F_c);
+
+!R = (!R_c);
+
+!A_c = (!A);
+
+!B_c = (!B);
+
+!C_c = (!C);
+

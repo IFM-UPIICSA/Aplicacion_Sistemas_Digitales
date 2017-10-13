@@ -1,0 +1,2 @@
+@W: CD266 :"C:\isplever_classic2_0\examples\ochomas\problema 3\ejecutable.vhd":32:9:32:9|f is not readable.  This may cause a simulation mismatch.
+

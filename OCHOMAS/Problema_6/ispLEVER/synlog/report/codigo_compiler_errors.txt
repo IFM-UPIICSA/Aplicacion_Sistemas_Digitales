@@ -1,0 +1,4 @@
+@E: CD242 :"C:\isplever_classic2_0\examples\ochomas\problema 6\codigo.vhd":28:68:28:68|Expecting ;
+@E: CD214 :"C:\isplever_classic2_0\examples\ochomas\problema 6\codigo.vhd":28:68:28:68|Not a concurrent statement
+@E|Parse errors encountered - exiting
+

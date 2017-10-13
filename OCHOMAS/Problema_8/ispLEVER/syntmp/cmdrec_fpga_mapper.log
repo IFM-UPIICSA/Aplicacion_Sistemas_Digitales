@@ -1,0 +1,10 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "C:\isplever_classic2_0\examples\ochomas\problema 8"  -part ispGAL22LV10  -package LJ  -grade -4   -areadelay 0 -minc -RWCheckOnRam 1 -summaryfile "C:\isplever_classic2_0\examples\ochomas\problema 8\synlog\report\codigo_fpga_mapper.xml" -top_level_module  codigo  -multisrs  -oedif  "C:\isplever_classic2_0\examples\ochomas\problema 8\codigo.edi"  -freq 1.000  "C:\isplever_classic2_0\examples\ochomas\problema 8\synwork\codigo_mult.srs"  -devicelib  C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.v  -ologparam  "C:\isplever_classic2_0\examples\ochomas\problema 8\syntmp\codigo.plg"  -osyn  "C:\isplever_classic2_0\examples\ochomas\problema 8\codigo.srm"  -prjdir  "c:\isplever_classic2_0\examples\ochomas\problema 8\"  -prjname  codigo  -log  "C:\isplever_classic2_0\examples\ochomas\problema 8\synlog\codigo_fpga_mapper.srr" 
+rc:0 success:1
+C:\isplever_classic2_0\examples\ochomas\problema 8\codigo.edi|o|1507162522|5533
+C:\isplever_classic2_0\examples\ochomas\problema 8\synwork\codigo_mult.srs|i|1507162521|1694
+C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.v|i|1401285984|210986
+"C:\isplever_classic2_0\examples\ochomas\problema 8\syntmp\codigo.plg"|o|0|0
+C:\isplever_classic2_0\examples\ochomas\problema 8\codigo.srm|o|1507162522|3659
+C:\isplever_classic2_0\examples\ochomas\problema 8\synlog\codigo_fpga_mapper.srr|o|1507162522|1066
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399390884|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399393722|8049664

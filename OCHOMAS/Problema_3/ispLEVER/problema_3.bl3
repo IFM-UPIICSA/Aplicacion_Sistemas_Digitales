@@ -1,0 +1,21 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Fri Sep 29 18:10:03 2017
+#$ MODULE ejecuta
+#$ PINS 6 A:2'ke'  B:3'ke'  C:4'ke'  D:5'ke'  F:14'ke'  G:15'ke' 
+
+.model ejecuta
+.inputs A.BLIF B.BLIF C.BLIF D.BLIF
+.outputs F G
+.names A.BLIF B.BLIF C.BLIF D.BLIF F
+00-- 1
+--1- 1
+---1 1
+-100 0
+1-00 0
+.names A.BLIF B.BLIF C.BLIF D.BLIF G
+-100 1
+1-00 1
+00-- 0
+--1- 0
+---1 0
+.end

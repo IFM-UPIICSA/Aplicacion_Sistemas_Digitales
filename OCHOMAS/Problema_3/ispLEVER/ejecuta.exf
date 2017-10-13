@@ -1,0 +1,14 @@
+Section Cross Reference File
+Design 'ejecuta' created Fri Sep 29 18:10:03 2017
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     A
+        Input     B
+        Input     C
+        Input     D
+        Output     F
+        Output     G
+End
