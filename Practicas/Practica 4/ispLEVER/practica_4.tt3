@@ -1,0 +1,19 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Thu Oct 12 01:26:03 2017
+#$ MODULE codigo
+#$ DEVICE p22v10g
+#$ PINS 5 A:2 B:3 X+:14 Y-:15 Z+:16
+.i 2 
+.o 3 
+.type fr
+.ilb A B
+.ob X Y Z
+.phase 111
+.p 6
+0- 01~
+11 100
+01 ~~1
+-0 01~
+10 ~~1
+00 ~~0
+.e

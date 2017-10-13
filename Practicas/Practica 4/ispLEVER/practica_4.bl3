@@ -1,0 +1,22 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Thu Oct 12 01:26:03 2017
+#$ MODULE codigo
+#$ PINS 5 A:2'ke'  B:3'ke'  X:14'ke'  Y:15'ke'  Z:16'ke' 
+
+.model codigo
+.inputs A.BLIF B.BLIF
+.outputs X Y Z
+.names A.BLIF B.BLIF X
+11 1
+0- 0
+-0 0
+.names A.BLIF B.BLIF Y
+0- 1
+-0 1
+11 0
+.names A.BLIF B.BLIF Z
+10 1
+01 1
+00 0
+11 0
+.end

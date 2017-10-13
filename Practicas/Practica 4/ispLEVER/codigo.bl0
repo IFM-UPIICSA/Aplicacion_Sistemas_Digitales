@@ -1,0 +1,30 @@
+#$ DATE Thu Oct 12 01:26:03 2017
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE codigo
+#$ PINS 5 A:2'ke'  B:3'ke'  X:14'ke'  Y:15'ke'  Z:16'ke' 
+#$ NODES 7 N_2 N_2_i_0 X_i A_i A_c B_c X_c 
+.model codigo
+.inputs A.BLIF B.BLIF N_2.BLIF N_2_i_0.BLIF X_i.BLIF A_i.BLIF A_c.BLIF B_c.BLIF X_c.BLIF  
+.outputs X Y Z N_2 N_2_i_0 X_i A_i A_c B_c X_c
+.names  A.BLIF A_c
+1 1
+.names  B.BLIF B_c
+1 1
+.names  X_c.BLIF X
+1 1
+.names  X_i.BLIF Y
+1 1
+.names  N_2_i_0.BLIF Z
+1 1
+.names  A_c.BLIF A_i
+0 1
+.names  A_i.BLIF B_c.BLIF N_2
+01 1
+10 1
+.names  A_c.BLIF B_c.BLIF X_c
+11 1
+.names  N_2.BLIF N_2_i_0
+0 1
+.names  X_c.BLIF X_i
+0 1
+.end
