@@ -5,8 +5,8 @@ Inspect circuit codigo
     Number of input ports   : 4
     Number of output ports  : 7
     Number of bidir ports   : 0
-    Number of instances     : 81
-    Number of nets          : 85
+    Number of instances     : 80
+    Number of nets          : 84
 
 No design errors found in circuit codigo
 

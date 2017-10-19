@@ -1,0 +1,5 @@
+InFile:convertidores_de_codigo.psl
+DBaseFile: C:\ispLEVER_Classic2_0\ispcpld\lib5\devices\Lattice.tim
+Outfile: -o convertidores_de_codigo.tim
+Partname:$PARTNAME LAT GAL22V10D-10LP GAL P22V10
+Size:39

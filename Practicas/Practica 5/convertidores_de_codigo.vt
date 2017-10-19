@@ -1,0 +1,208 @@
+// Jed2vlog, ispLEVER version 2.00 
+// Header :
+//    File Name :
+//       convertidores_de_codigo 
+//    Circuit Name :
+//       codigo 
+//    Last Update :
+//       Thu Oct 19 01:19:53 2017
+//    Device Information :
+//       PLD Type P22V10G
+//    Delay Model Selected :TYP
+//    Jedec Information :
+//	ispLEVER Classic 2.0.00.17.20.15 Lattice Semiconductor Corp.
+//	JEDEC file for: P22V10G V9.0
+//	Created on: Thu Oct 19 01:19:51 2017
+//	
+//	
+// endHeader
+
+
+// Delay Assigments
+`timescale 1ns /100ps
+//----------------------------------------------------------------------//
+//                                                                      //
+//              MAIN PLD NETLIST MODULE                                 //
+//                                                                      //
+//----------------------------------------------------------------------//
+
+module codigo(PIN01,W,X,Y,Z,PIN06,PIN07,PIN08,PIN09,PIN10,PIN11,PIN12,PIN13,
+             G,F,E,D,C,B,A,PIN21,PIN22,PIN23,PIN24);
+	inout G, F, E, D, C, B, A,PIN21,PIN22,PIN23;
+	input PIN01, W, X, Y, Z, PIN06, PIN07, PIN08, PIN09, PIN10, PIN11, PIN12
+             , PIN13, PIN24;
+	supply0 GND;
+	supply1 PWR;
+
+//Pin Assignments:
+//        PIN02 = W;
+//        PIN03 = X;
+//        PIN04 = Y;
+//        PIN05 = Z;
+//        PIN14 = G;
+//        PIN15 = F;
+//        PIN16 = E;
+//        PIN17 = D;
+//        PIN18 = C;
+//        PIN19 = B;
+//        PIN20 = A;
+
+// Delay Parameters:
+//   TYP delay used
+parameter tpLH09 = 0:0:0;
+parameter tpHL09 = 0:0:0;
+parameter tpLH11 = 0:0:0;
+parameter tpHL11 = 0:0:0;
+parameter tpLH12 = 0:0:0;
+parameter tpHL12 = 0:0:0;
+parameter tpLH03 = 0:0:0;
+parameter tpHL03 = 0:0:0;
+parameter tpLH05 = 0:0:0;
+parameter tpHL05 = 0:0:0;
+parameter tpLH_inco_lump = 1:6:10;
+parameter tpHL_inco_lump = 1:6:10;
+parameter tpLH_oe = 0:0:0;
+parameter tpHL_oe = 0:0:0;
+parameter tpLH_oe_pterm = 1:6:10;
+parameter tpHL_oe_pterm = 1:6:10;
+parameter tpLH_preset_lump = 0:0:0;
+parameter tpHL_preset_lump = 0:0:0;
+parameter tpLH_reset_lump = 1:7:13;
+parameter tpHL_reset_lump = 1:7:13;
+parameter tpLH_fo_lump = 0:1:4;
+parameter tpHL_fo_lump = 0:1:4;
+
+//   Input Buffer:
+	andinv_codigo  CLKIN1( CLKIN1_o, CLKIN1_ob, PIN01);
+	andinv_codigo  INBUF02( INBUF02_o, INBUF02_ob, W);
+	andinv_codigo  INBUF03( INBUF03_o, INBUF03_ob, X);
+	andinv_codigo  INBUF04( INBUF04_o, INBUF04_ob, Y);
+	andinv_codigo  INBUF05( INBUF05_o, INBUF05_ob, Z);
+	andinv_codigo  INBUF06( INBUF06_o, INBUF06_ob, PIN06);
+	andinv_codigo  INBUF07( INBUF07_o, INBUF07_ob, PIN07);
+	andinv_codigo  INBUF08( INBUF08_o, INBUF08_ob, PIN08);
+	andinv_codigo  INBUF09( INBUF09_o, INBUF09_ob, PIN09);
+	andinv_codigo  INBUF10( INBUF10_o, INBUF10_ob, PIN10);
+	andinv_codigo  INBUF11( INBUF11_o, INBUF11_ob, PIN11);
+	andinv_codigo  INBUF13( INBUF13_o, INBUF13_ob, PIN13);
+	andinv_codigo  INBUF14( INBUF14_o, INBUF14_ob, G);
+	andinv_codigo  INBUF15( INBUF15_o, INBUF15_ob, F);
+	andinv_codigo  INBUF16( INBUF16_o, INBUF16_ob, E);
+	andinv_codigo  INBUF17( INBUF17_o, INBUF17_ob, D);
+	andinv_codigo  INBUF18( INBUF18_o, INBUF18_ob, C);
+	andinv_codigo  INBUF19( INBUF19_o, INBUF19_ob, B);
+	andinv_codigo  INBUF20( INBUF20_o, INBUF20_ob, A);
+
+//   Product Terms (AND array):
+	and  #(tpLH03,tpHL03) PT035_1540( PT035_1540_o, INBUF02_ob, INBUF03_o, INBUF04_ob, INBUF05_o);
+	and  #(tpLH03,tpHL03) PT036_1584( PT036_1584_o, INBUF02_ob, INBUF03_o, INBUF04_o, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT037_1628( PT037_1628_o, INBUF02_o, INBUF03_ob, INBUF04_o, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT038_1672( PT038_1672_o, INBUF02_ob, INBUF03_ob, INBUF04_ob, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT050_2200( PT050_2200_o, INBUF02_ob, INBUF03_ob, INBUF04_o);
+	and  #(tpLH03,tpHL03) PT051_2244( PT051_2244_o, INBUF02_ob, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT052_2288( PT052_2288_o, INBUF03_ob, INBUF04_ob, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT067_2948( PT067_2948_o, INBUF02_ob, INBUF03_ob, INBUF04_o);
+	and  #(tpLH03,tpHL03) PT068_2992( PT068_2992_o, INBUF02_o, INBUF03_ob, INBUF04_ob, INBUF05_o);
+	and  #(tpLH03,tpHL03) PT069_3036( PT069_3036_o, INBUF02_ob, INBUF04_o, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT084_3696( PT084_3696_o, INBUF02_ob, INBUF03_o, INBUF04_o);
+	and  #(tpLH03,tpHL03) PT085_3740( PT085_3740_o, INBUF02_o, INBUF03_ob, INBUF04_ob);
+	and  #(tpLH03,tpHL03) PT086_3784( PT086_3784_o, INBUF02_ob, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT087_3828( PT087_3828_o, INBUF03_o, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT099_4356( PT099_4356_o, INBUF02_ob, INBUF03_o, INBUF04_ob);
+	and  #(tpLH03,tpHL03) PT100_4400( PT100_4400_o, INBUF02_o, INBUF04_o, INBUF05_o);
+	and  #(tpLH03,tpHL03) PT101_4444( PT101_4444_o, INBUF03_o, INBUF04_ob, INBUF05_o);
+	and  #(tpLH03,tpHL03) PT102_4488( PT102_4488_o, INBUF02_o, INBUF03_ob, INBUF04_ob, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT112_4928( PT112_4928_o, INBUF02_o, INBUF04_ob, INBUF05_o);
+	and  #(tpLH03,tpHL03) PT113_4972( PT113_4972_o, INBUF03_o, INBUF04_ob, INBUF05_o);
+	and  #(tpLH03,tpHL03) PT123_5412( PT123_5412_o, INBUF02_ob, INBUF03_o, INBUF05_o);
+	and  #(tpLH03,tpHL03) PT124_5456( PT124_5456_o, INBUF02_ob, INBUF04_o, INBUF05_ob);
+	and  #(tpLH03,tpHL03) PT125_5500( PT125_5500_o, INBUF02_o, INBUF03_o, INBUF04_ob, INBUF05_ob);
+
+//   Sum Terms (OR arrray):
+	or  #(tpLH_inco_lump,tpHL_inco_lump) ST014( ST014_o, PT123_5412_o, PT124_5456_o, PT125_5500_o);
+	or  #(tpLH_inco_lump,tpHL_inco_lump) ST015( ST015_o, PT112_4928_o, PT113_4972_o);
+	or  #(tpLH_inco_lump,tpHL_inco_lump) ST016( ST016_o, PT099_4356_o, PT100_4400_o, PT101_4444_o, PT102_4488_o);
+	or  #(tpLH_inco_lump,tpHL_inco_lump) ST017( ST017_o, PT084_3696_o, PT085_3740_o, PT086_3784_o, PT087_3828_o);
+	or  #(tpLH_inco_lump,tpHL_inco_lump) ST018( ST018_o, PT067_2948_o, PT068_2992_o, PT069_3036_o);
+	or  #(tpLH_inco_lump,tpHL_inco_lump) ST019( ST019_o, PT050_2200_o, PT051_2244_o, PT052_2288_o);
+	or  #(tpLH_inco_lump,tpHL_inco_lump) ST020( ST020_o, PT035_1540_o, PT036_1584_o, PT037_1628_o, PT038_1672_o);
+
+//   Macro Cells:
+	dff_spar_codigo  OUTREG21( OUTREG21_o, OUTREG21_ob, GND, CLKIN1_o, NODE26_o, NODE25_o);
+	dff_spar_codigo  OUTREG22( OUTREG22_o, OUTREG22_ob, GND, CLKIN1_o, NODE26_o, NODE25_o);
+	dff_spar_codigo  OUTREG23( OUTREG23_o, OUTREG23_ob, GND, CLKIN1_o, NODE26_o, NODE25_o);
+
+//   Feedback Node:
+	andinv_codigo  NODE34( NODE34_o, NODE34_ob, OUTREG21_ob);
+	andinv_codigo  NODE35( NODE35_o, NODE35_ob, OUTREG22_ob);
+	andinv_codigo  NODE36( NODE36_o, NODE36_ob, OUTREG23_ob);
+
+//   Output Buffer:
+	notif1  #(tpLH09,tpHL09) OUTBUF14( G, ST014_o, PWR);
+	notif1  #(tpLH09,tpHL09) OUTBUF15( F, ST015_o, PWR);
+	notif1  #(tpLH09,tpHL09) OUTBUF16( E, ST016_o, PWR);
+	bufif1  #(tpLH11,tpHL11) OUTBUF17( D, ST017_o, PWR);
+	notif1  #(tpLH09,tpHL09) OUTBUF18( C, ST018_o, PWR);
+	notif1  #(tpLH09,tpHL09) OUTBUF19( B, ST019_o, PWR);
+	notif1  #(tpLH09,tpHL09) OUTBUF20( A, ST020_o, PWR);
+	notif1  #(tpLH_fo_lump,tpHL_fo_lump) OUTBUF21( PIN21, OUTREG21_o, GND);
+	notif1  #(tpLH_fo_lump,tpHL_fo_lump) OUTBUF22( PIN22, OUTREG22_o, GND);
+	notif1  #(tpLH_fo_lump,tpHL_fo_lump) OUTBUF23( PIN23, OUTREG23_o, GND);
+	andinv_codigo  NODE25( NODE25_o, NODE25_ob, GND);
+	andinv_codigo  NODE26( NODE26_o, NODE26_ob, GND);
+endmodule
+/************************************************************************
+*                                                                       *
+*   MODULE: ANDINV                                                      *
+*     Input Buffer with dual outputs.                                   *
+*                                                                       *
+*************************************************************************/
+module andinv_codigo(out,outb,in);
+output out,outb;
+input  in;
+parameter tpLH_iob = 0:0:0; 
+parameter tpHL_iob = 0:0:0; 
+        
+   and #(tpLH_iob,tpHL_iob) n1(out,in);
+   not #(tpLH_iob,tpHL_iob) n2(outb,in);
+endmodule
+/************************************************************************
+*                                                                       *
+*   MODULE: DFF_SPAR :                                                     *
+*      Leading edge triggered DFF.                                      *
+*                                                                       *
+*************************************************************************/
+module dff_spar_codigo(q,qb,d,clk,pst_h,rst_h);
+   output q,qb;
+   input  d,clk,pst_h,rst_h;
+   wire   rst_pst;
+   reg    pst;
+initial
+   pst = 1'b0; 
+ 
+parameter pwrUpState = 0;
+parameter pwrUpDelay = 50;
+   dff_primitive_p0 DFF(q,data,clk,rst_h,pst);
+
+//  Leading edge triggered DFF 
+   or (data,d,pst_h);/* async preset gated with clock */
+ 
+   nand (qb,q);
+  
+   assign rst_pst = ~rst_h && ~pst_h;
+// Timing check
+specify
+specparam tpLH_co_lump = 1:4:7;
+specparam tpHL_co_lump = 1:4:7;
+specparam tpLH_ff_lump = 1:3:3;
+specparam tpHL_ff_lump = 1:3:3;
+specparam setup_ff_lump = 7:7:7;
+specparam hold_ff_lump = 0:0:0;
+specparam preset_ff_lump = 0:0:0;
+specparam reset_ff_lump = 1:7:13;
+   $setuphold(posedge clk &&& rst_pst, data &&& rst_pst, setup_ff_lump, hold_ff_lump);
+   (clk *> q) = (tpLH_ff_lump,tpHL_ff_lump);
+   (clk *> qb) = (tpLH_ff_lump,tpHL_ff_lump);
+endspecify
+endmodule
+//

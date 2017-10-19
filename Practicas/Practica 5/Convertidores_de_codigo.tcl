@@ -1210,3 +1210,348 @@ if [runCmd "\"$cpld_bin/fuseasm\" convertidores_de_codigo.tt3 -dev p22v10g -o co
 
 ########## Tcl recorder end at 10/19/17 01:05:04 ###########
 
+
+########## Tcl recorder starts at 10/19/17 01:19:04 ##########
+
+set version "2.0"
+set proj_dir "C:/Users/ismae/Documents/GitHub Repos/Aplicacion_Sistemas_Digitales/Practicas/Practica 5"
+cd $proj_dir
+
+# Get directory paths
+set pver $version
+regsub -all {\.} $pver {_} pver
+set lscfile "lsc_"
+append lscfile $pver ".ini"
+set lsvini_dir [lindex [array get env LSC_INI_PATH] 1]
+set lsvini_path [file join $lsvini_dir $lscfile]
+if {[catch {set fid [open $lsvini_path]} msg]} {
+	 puts "File Open Error: $lsvini_path"
+	 return false
+} else {set data [read $fid]; close $fid }
+foreach line [split $data '\n'] { 
+	set lline [string tolower $line]
+	set lline [string trim $lline]
+	if {[string compare $lline "\[paths\]"] == 0} { set path 1; continue}
+	if {$path && [regexp {^\[} $lline]} {set path 0; break}
+	if {$path && [regexp {^bin} $lline]} {set cpld_bin $line; continue}
+	if {$path && [regexp {^fpgapath} $lline]} {set fpga_dir $line; continue}
+	if {$path && [regexp {^fpgabinpath} $lline]} {set fpga_bin $line}}
+
+set cpld_bin [string range $cpld_bin [expr [string first "=" $cpld_bin]+1] end]
+regsub -all "\"" $cpld_bin "" cpld_bin
+set cpld_bin [file join $cpld_bin]
+set install_dir [string range $cpld_bin 0 [expr [string first "ispcpld" $cpld_bin]-2]]
+regsub -all "\"" $install_dir "" install_dir
+set install_dir [file join $install_dir]
+set fpga_dir [string range $fpga_dir [expr [string first "=" $fpga_dir]+1] end]
+regsub -all "\"" $fpga_dir "" fpga_dir
+set fpga_dir [file join $fpga_dir]
+set fpga_bin [string range $fpga_bin [expr [string first "=" $fpga_bin]+1] end]
+regsub -all "\"" $fpga_bin "" fpga_bin
+set fpga_bin [file join $fpga_bin]
+
+if {[string match "*$fpga_bin;*" $env(PATH)] == 0 } {
+   set env(PATH) "$fpga_bin;$env(PATH)" }
+
+if {[string match "*$cpld_bin;*" $env(PATH)] == 0 } {
+   set env(PATH) "$cpld_bin;$env(PATH)" }
+
+lappend auto_path [file join $install_dir "ispcpld" "tcltk" "lib" "ispwidget" "runproc"]
+package require runcmd
+
+# Commands to make the Process: 
+# Hierarchy
+if [runCmd "\"$cpld_bin/vhd2jhd\" \"codigo.vhd\" -o \"codigo.jhd\" -m \"$install_dir/ispcpld/generic/lib/vhd/location.map\" -p \"$install_dir/ispcpld/generic/lib\""] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+
+########## Tcl recorder end at 10/19/17 01:19:04 ###########
+
+
+########## Tcl recorder starts at 10/19/17 01:19:08 ##########
+
+set version "2.0"
+set proj_dir "C:/Users/ismae/Documents/GitHub Repos/Aplicacion_Sistemas_Digitales/Practicas/Practica 5"
+cd $proj_dir
+
+# Get directory paths
+set pver $version
+regsub -all {\.} $pver {_} pver
+set lscfile "lsc_"
+append lscfile $pver ".ini"
+set lsvini_dir [lindex [array get env LSC_INI_PATH] 1]
+set lsvini_path [file join $lsvini_dir $lscfile]
+if {[catch {set fid [open $lsvini_path]} msg]} {
+	 puts "File Open Error: $lsvini_path"
+	 return false
+} else {set data [read $fid]; close $fid }
+foreach line [split $data '\n'] { 
+	set lline [string tolower $line]
+	set lline [string trim $lline]
+	if {[string compare $lline "\[paths\]"] == 0} { set path 1; continue}
+	if {$path && [regexp {^\[} $lline]} {set path 0; break}
+	if {$path && [regexp {^bin} $lline]} {set cpld_bin $line; continue}
+	if {$path && [regexp {^fpgapath} $lline]} {set fpga_dir $line; continue}
+	if {$path && [regexp {^fpgabinpath} $lline]} {set fpga_bin $line}}
+
+set cpld_bin [string range $cpld_bin [expr [string first "=" $cpld_bin]+1] end]
+regsub -all "\"" $cpld_bin "" cpld_bin
+set cpld_bin [file join $cpld_bin]
+set install_dir [string range $cpld_bin 0 [expr [string first "ispcpld" $cpld_bin]-2]]
+regsub -all "\"" $install_dir "" install_dir
+set install_dir [file join $install_dir]
+set fpga_dir [string range $fpga_dir [expr [string first "=" $fpga_dir]+1] end]
+regsub -all "\"" $fpga_dir "" fpga_dir
+set fpga_dir [file join $fpga_dir]
+set fpga_bin [string range $fpga_bin [expr [string first "=" $fpga_bin]+1] end]
+regsub -all "\"" $fpga_bin "" fpga_bin
+set fpga_bin [file join $fpga_bin]
+
+if {[string match "*$fpga_bin;*" $env(PATH)] == 0 } {
+   set env(PATH) "$fpga_bin;$env(PATH)" }
+
+if {[string match "*$cpld_bin;*" $env(PATH)] == 0 } {
+   set env(PATH) "$cpld_bin;$env(PATH)" }
+
+lappend auto_path [file join $install_dir "ispcpld" "tcltk" "lib" "ispwidget" "runproc"]
+package require runcmd
+
+# Commands to make the Process: 
+# Compiled Equations
+if [catch {open codigo.cmd w} rspFile] {
+	puts stderr "Cannot create response file codigo.cmd: $rspFile"
+} else {
+	puts $rspFile "STYFILENAME: convertidores_de_codigo.sty
+PROJECT: codigo
+WORKING_PATH: \"$proj_dir\"
+MODULE: codigo
+VHDL_FILE_LIST: codigo.vhd
+OUTPUT_FILE_NAME: codigo
+SUFFIX_NAME: edi
+"
+	close $rspFile
+}
+if [runCmd "\"$cpld_bin/Synpwrap\" -e codigo -target ispGAL -pro "] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+file delete codigo.cmd
+if [runCmd "\"$cpld_bin/edif2blf\" -edf \"codigo.edi\" -out \"codigo.bl0\" -err automake.err -log \"codigo.log\" -prj convertidores_de_codigo -lib \"$install_dir/ispcpld/dat/mach.edn\" -cvt YES -net_Vcc VCC -net_GND GND -nbx -dse -tlw"] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+if [runCmd "\"$cpld_bin/blif2eqn\" \"codigo.bl0\" -o \"codigo.eq0\" -err automake.err"] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+
+########## Tcl recorder end at 10/19/17 01:19:08 ###########
+
+
+########## Tcl recorder starts at 10/19/17 01:19:48 ##########
+
+set version "2.0"
+set proj_dir "C:/Users/ismae/Documents/GitHub Repos/Aplicacion_Sistemas_Digitales/Practicas/Practica 5"
+cd $proj_dir
+
+# Get directory paths
+set pver $version
+regsub -all {\.} $pver {_} pver
+set lscfile "lsc_"
+append lscfile $pver ".ini"
+set lsvini_dir [lindex [array get env LSC_INI_PATH] 1]
+set lsvini_path [file join $lsvini_dir $lscfile]
+if {[catch {set fid [open $lsvini_path]} msg]} {
+	 puts "File Open Error: $lsvini_path"
+	 return false
+} else {set data [read $fid]; close $fid }
+foreach line [split $data '\n'] { 
+	set lline [string tolower $line]
+	set lline [string trim $lline]
+	if {[string compare $lline "\[paths\]"] == 0} { set path 1; continue}
+	if {$path && [regexp {^\[} $lline]} {set path 0; break}
+	if {$path && [regexp {^bin} $lline]} {set cpld_bin $line; continue}
+	if {$path && [regexp {^fpgapath} $lline]} {set fpga_dir $line; continue}
+	if {$path && [regexp {^fpgabinpath} $lline]} {set fpga_bin $line}}
+
+set cpld_bin [string range $cpld_bin [expr [string first "=" $cpld_bin]+1] end]
+regsub -all "\"" $cpld_bin "" cpld_bin
+set cpld_bin [file join $cpld_bin]
+set install_dir [string range $cpld_bin 0 [expr [string first "ispcpld" $cpld_bin]-2]]
+regsub -all "\"" $install_dir "" install_dir
+set install_dir [file join $install_dir]
+set fpga_dir [string range $fpga_dir [expr [string first "=" $fpga_dir]+1] end]
+regsub -all "\"" $fpga_dir "" fpga_dir
+set fpga_dir [file join $fpga_dir]
+set fpga_bin [string range $fpga_bin [expr [string first "=" $fpga_bin]+1] end]
+regsub -all "\"" $fpga_bin "" fpga_bin
+set fpga_bin [file join $fpga_bin]
+
+if {[string match "*$fpga_bin;*" $env(PATH)] == 0 } {
+   set env(PATH) "$fpga_bin;$env(PATH)" }
+
+if {[string match "*$cpld_bin;*" $env(PATH)] == 0 } {
+   set env(PATH) "$cpld_bin;$env(PATH)" }
+
+lappend auto_path [file join $install_dir "ispcpld" "tcltk" "lib" "ispwidget" "runproc"]
+package require runcmd
+
+# Commands to make the Process: 
+# Verilog Post-Route Simulation Model
+if [runCmd "\"$cpld_bin/vhd2naf\" -tfi -proj convertidores_de_codigo -mod codigo -tpl \"$install_dir/ispcpld/generic/verilog/tfi.tft\" -out \"codigo\" -p \"$install_dir/ispcpld/generic\" \"codigo.vhd\""] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+if [runCmd "\"$cpld_bin/vhd2naf\" -tfi -proj convertidores_de_codigo -out codigo -mod codigo -ext btp -tpl \"$install_dir/ispcpld/pld/j2mod.tft\" codigo.vhd"] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+if [runCmd "\"$cpld_bin/iblifopt\" \"codigo.bl0\" -red bypin choose -collapse -pterms 8 -family -err automake.err "] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+if [runCmd "\"$cpld_bin/iblflink\" \"codigo.bl1\" -o \"convertidores_de_codigo.bl2\" -omod codigo -family -err automake.err "] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+if [runCmd "\"$cpld_bin/iblifopt\" convertidores_de_codigo.bl2 -red bypin choose -sweep -collapse all -pterms 8 -err automake.err "] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+if [runCmd "\"$cpld_bin/idiofft\" convertidores_de_codigo.bl3 -pla -o convertidores_de_codigo.tt2 -dev p22v10g -define N -err automake.err "] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+if [runCmd "\"$cpld_bin/fit\" convertidores_de_codigo.tt2 -dev p22v10g -str -err automake.err "] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+if [runCmd "\"$cpld_bin/fuseasm\" convertidores_de_codigo.tt3 -dev p22v10g -o convertidores_de_codigo.jed -ivec NoInput.tmv -rep convertidores_de_codigo.rpt -doc brief -con ptblown -for brief -err automake.err "] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+if [catch {open convertidores_de_codigo.psl w} rspFile] {
+	puts stderr "Cannot create response file convertidores_de_codigo.psl: $rspFile"
+} else {
+	puts $rspFile "-dev p22v10g -part LAT GAL22V10D-10LP GAL -o convertidores_de_codigo.tim
+"
+	close $rspFile
+}
+if [runCmd "\"$cpld_bin/timsel\" @convertidores_de_codigo.psl"] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+file delete convertidores_de_codigo.psl
+if [catch {open convertidores_de_codigo._sp w} rspFile] {
+	puts stderr "Cannot create response file convertidores_de_codigo._sp: $rspFile"
+} else {
+	puts $rspFile "#insert -- NOTE: Do not edit this file.
+#insert -- Auto generated by Post-Route Verilog Simulation Models
+#insert --
+#unixpath
+#unixpath $install_dir/ispcpld/pld/verilog
+#libfile pldlib.v
+#unixpath
+#vlog \"$proj_dir/convertidores_de_codigo.vt\"
+#insert -- End
+"
+	close $rspFile
+}
+if [runCmd "\"$cpld_bin/chipsim\" \"convertidores_de_codigo._sp\" \"convertidores_de_codigo.vtl\" none"] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+file delete convertidores_de_codigo._sp
+if [catch {open convertidores_de_codigo._sp w} rspFile] {
+	puts stderr "Cannot create response file convertidores_de_codigo._sp: $rspFile"
+} else {
+	puts $rspFile "#simulator Aldec
+#insert # NOTE: Do not edit this file.
+#insert # Auto generated by Post-Route Verilog Simulation Models
+#insert #
+#unixpath
+#unixpath $install_dir/ispcpld/pld/verilog
+#libfile pldlib.v
+#unixpath
+#vlog \"$proj_dir/convertidores_de_codigo.vt\"
+#insert # End
+"
+	close $rspFile
+}
+if [runCmd "\"$cpld_bin/chipsim\" \"convertidores_de_codigo._sp\" \"convertidores_de_codigo.vatl\" none"] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+file delete convertidores_de_codigo._sp
+if [runCmd "\"$cpld_bin/j2vlog\" convertidores_de_codigo.jed -dly custom convertidores_de_codigo.tim -pldbus default codigo.btp -o convertidores_de_codigo.vt -module codigo -suppress -err automake.err "] {
+	return
+} else {
+	vwait done
+	if [checkResult $done] {
+		return
+	}
+}
+
+########## Tcl recorder end at 10/19/17 01:19:48 ###########
+

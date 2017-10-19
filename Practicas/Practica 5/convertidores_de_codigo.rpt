@@ -1,7 +1,7 @@
 
 
                                                                       Page 1
-ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:19:51 2017
 
 
 
@@ -25,7 +25,7 @@ Output files:
 
 
                                                                       Page 2
-ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:19:51 2017
 
 P22V10G Programmed Logic:
 --------------------------------------------------------------------------------
@@ -60,13 +60,12 @@ F     = !(  W & !Y & Z
 
 G     = !(  !W & X & Z 
          #   !W & Y & !Z 
-         #   !X & Y & !Z 
          #   W & X & !Y & !Z );
 
 
 
                                                                       Page 3
-ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:19:51 2017
 
 P22V10G Chip Diagram:
 --------------------------------------------------------------------------------
@@ -110,7 +109,7 @@ P22V10G Chip Diagram:
 
 
                                                                       Page 4
-ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:19:51 2017
 
 P22V10G Resource Allocations:
 --------------------------------------------------------------------------------
@@ -138,7 +137,7 @@ Buried Nodes:         |           |             |
 
 
                                                                       Page 5
-ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:19:51 2017
 
 P22V10G Product Terms Distribution:
 --------------------------------------------------------------------------------
@@ -154,7 +153,7 @@ C                                        |   18     |   3   |  16   |  13
 D                                        |   17     |   4   |  14   |  10
 E                                        |   16     |   4   |  12   |   8
 F                                        |   15     |   2   |  10   |   8
-G                                        |   14     |   4   |   8   |   4
+G                                        |   14     |   3   |   8   |   5
 
 
      ==== List of Inputs/Feedbacks ====
@@ -168,7 +167,7 @@ Z                                        |    5     | INPUT
 
 
                                                                       Page 6
-ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:19:51 2017
 
 P22V10G Unused Resources:
 --------------------------------------------------------------------------------
