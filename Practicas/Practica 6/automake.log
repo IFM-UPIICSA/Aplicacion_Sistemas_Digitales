@@ -1,0 +1,109 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Compiled Equations
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\Synpwrap.exe -e codigo -target ispGAL -pro '
+
+Copyright (c) 1991-2010 Lattice Semiconductor Corporation,  All rights reserved.
+Version : 2.0.00.17.20.15
+
+Done sucessfully with exit code 0.
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ISMAELXD
+
+#Implementation: practica 6
+
+$ Start of Compile
+#Thu Oct 19 09:59:11 2017
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.vhd":6:7:6:12|Top entity is set to codigo.
+VHDL syntax check successful!
+@N: CD630 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.vhd":6:7:6:12|Synthesizing work.codigo.behavioral 
+Post processing for work.codigo.behavioral
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Oct 19 09:59:11 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Oct 19 09:59:12 2017
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N: MF248 |Running in 64-bit mode.
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+IBUF            8 uses
+OBUF            5 uses
+INV             10 uses
+AND2            13 uses
+XOR2            6 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 103MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Oct 19 09:59:13 2017
+
+###########################################################]
+
+Synplicity VHDL/Verilog HDL Synthesizer finished successfully
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\edif2blf.exe -edf "codigo.edi" -out "codigo.bl0" -err automake.err -log "codigo.log" -prj practica_6 -lib "C:\ispLEVER_Classic2_0\ispcpld/dat/mach.edn" -cvt YES -net_Vcc VCC -net_GND GND -nbx -dse -tlw'
+
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit codigo
+    Number of input ports   : 2
+    Number of output ports  : 2
+    Number of bidir ports   : 0
+    Number of instances     : 45
+    Number of nets          : 53
+
+No design errors found in circuit codigo
+
+WriteBLIF ended normally.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\blif2eqn.exe "codigo.bl0" -o "codigo.eq0" -err automake.err'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Done: completed successfully.

@@ -1,0 +1,3 @@
+@E: CG119 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.vhd":37:78:37:78|Expecting closing )
+@E|Parse errors encountered - exiting
+
