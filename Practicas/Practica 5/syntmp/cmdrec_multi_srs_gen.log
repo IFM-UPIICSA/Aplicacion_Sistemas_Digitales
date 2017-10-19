@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  codigo  -multisrs  "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 5\synwork\codigo_comp.srs"  -osyn  "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 5\synwork\codigo_mult.srs"  -log  "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 5\synlog\codigo_multi_srs_gen.srr" 
+rc:0 success:1
+C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 5\synwork\codigo_comp.srs|i|1508393088|2678
+C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 5\synwork\codigo_mult.srs|o|1508393089|2663
+C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 5\synlog\codigo_multi_srs_gen.srr|o|1508393089|517
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401249136|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401249332|6337536

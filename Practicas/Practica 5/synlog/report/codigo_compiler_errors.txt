@@ -1,0 +1,2 @@
+@E: CD409 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 5\codigo.vhd":45:41:45:81|Object of indexed name is not an array
+

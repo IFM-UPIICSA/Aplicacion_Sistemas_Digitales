@@ -1,0 +1,287 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design codigo created Thu Oct 19 01:04:54 2017
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   A 
+   1/1        1        1    Pin   B 
+   1/1        1        1    Pin   C 
+   1/1        1        1    Pin   D 
+   1/1        1        1    Pin   E 
+   1/1        1        1    Pin   F 
+   1/1        1        1    Pin   G 
+   1          1        1    Node  N_24 
+   1          1        1    Node  N_28 
+   1          2        1    Node  N_32 
+   1          2        1    Node  N_33 
+   1          2        1    Node  N_34 
+   1          2        1    Node  N_35 
+   1          2        1    Node  N_36 
+   1          2        1    Node  N_37 
+   1          2        1    Node  N_38 
+   1          2        1    Node  N_39 
+   1          2        1    Node  N_40 
+   1          2        1    Node  N_41 
+   1          2        1    Node  N_42 
+   1          2        1    Node  N_43 
+   1          2        1    Node  N_44 
+   1          2        1    Node  N_46 
+   1          2        1    Node  N_47 
+   1          2        1    Node  N_48 
+   1          2        1    Node  N_50 
+   2          2        1    Node  N_25_i 
+   1          1        1    Node  N_25_i_i_0 
+   1          1        1    Node  Z_i 
+   1          1        1    Node  W_i 
+   1          1        1    Node  Y_i 
+   1          1        1    Node  X_i 
+   1/1        1        1    Node  W_c 
+   1/1        1        1    Node  X_c 
+   1/1        1        1    Node  Y_c 
+   1/1        1        1    Node  Z_c 
+   1          1        1    Node  C_c 
+   1          1        1    Node  D_c 
+   1          1        1    Node  E_c 
+   1          1        1    Node  F_c 
+   1          1        1    Node  N_46_i 
+   1          2        1    Node  N_28_0 
+   1          2        1    Node  N_24_0 
+   1          1        1    Node  N_42_i 
+   1          1        1    Node  N_43_i 
+   1          1        1    Node  N_44_i 
+   1          2        1    Node  N_23_0 
+   1          1        1    Node  N_32_i 
+   1          1        1    Node  N_40_i 
+   1          1        1    Node  N_41_i 
+   1          1        1    Node  N_50_i 
+   1          2        1    Node  E_c_0 
+   1          1        1    Node  N_37_i 
+   1          1        1    Node  N_38_i 
+   1          1        1    Node  N_39_i 
+   1          2        1    Node  N_20_0 
+   1          1        1    Node  N_34_i 
+   1          1        1    Node  N_36_i 
+   1          2        1    Node  N_18_0 
+   1          1        1    Node  N_48_i 
+   1          2        1    Node  C_c_0 
+   1          1        1    Node  N_33_i 
+   1          1        1    Node  N_35_i 
+   1          1        1    Node  N_47_i 
+   1          2        1    Node  D_c_0 
+   1          2        1    Node  F_c_0 
+   1          2        1    Node  N_44_1 
+   1          2        1    Node  N_23_0_1 
+   1          2        1    Node  E_c_0_1 
+   1          2        1    Node  E_c_0_2 
+   1          2        1    Node  E_c_0_3 
+   1          2        1    Node  N_20_0_1 
+   1          2        1    Node  C_c_0_1 
+   1          2        1    Node  D_c_0_1 
+   1          2        1    Node  D_c_0_2 
+   1          2        1    Node  F_c_0_1 
+   1          2        1    Node  N_42_1 
+   1          2        1    Node  N_40_1 
+   1          2        1    Node  N_39_1 
+   1          2        1    Node  N_37_1 
+   1          2        1    Node  N_35_1 
+=========
+  82/11         Best P-Term Total: 82
+                       Total Pins: 11
+                      Total Nodes: 74
+            Average P-Term/Output: 1
+
+
+Equations:
+
+A = (N_23_0);
+
+B = (N_18_0);
+
+C = (C_c);
+
+D = (D_c);
+
+E = (E_c);
+
+F = (F_c);
+
+G = (N_20_0);
+
+N_24 = (!N_24_0);
+
+N_28 = (!N_28_0);
+
+N_32 = (W_i & X_i);
+
+N_33 = (N_46 & X_c);
+
+N_34 = (W_i & Z_i);
+
+N_35 = (N_35_1 & Y_i);
+
+N_36 = (N_28 & X_i);
+
+N_37 = (N_37_1 & X_c);
+
+N_38 = (N_50 & X_i);
+
+N_39 = (N_39_1 & X_c);
+
+N_40 = (N_40_1 & Z_c);
+
+N_41 = (N_47 & W_c);
+
+N_42 = (N_42_1 & Z_i);
+
+N_43 = (N_46 & N_47);
+
+N_44 = (N_44_1 & Y_i);
+
+N_46 = (W_i & Y_c);
+
+N_47 = (X_c & Z_i);
+
+N_48 = (X_c & Z_c);
+
+N_50 = (Y_c & Z_i);
+
+N_25_i = (!W_c & Y_c
+     # W_c & !Y_c);
+
+N_25_i_i_0 = (!N_25_i);
+
+Z_i = (!Z_c);
+
+W_i = (!W_c);
+
+Y_i = (!Y_c);
+
+X_i = (!X_c);
+
+W_c = (W);
+
+X_c = (X);
+
+Y_c = (Y);
+
+Z_c = (Z);
+
+C_c = (!C_c_0);
+
+D_c = (!D_c_0);
+
+E_c = (!E_c_0);
+
+F_c = (!F_c_0);
+
+N_46_i = (!N_46);
+
+N_28_0 = (N_24 & N_46_i);
+
+N_24_0 = (Y_i & Z_i);
+
+N_42_i = (!N_42);
+
+N_43_i = (!N_43);
+
+N_44_i = (!N_44);
+
+N_23_0 = (N_23_0_1 & N_44_i);
+
+N_32_i = (!N_32);
+
+N_40_i = (!N_40);
+
+N_41_i = (!N_41);
+
+N_50_i = (!N_50);
+
+E_c_0 = (E_c_0_3 & N_50_i);
+
+N_37_i = (!N_37);
+
+N_38_i = (!N_38);
+
+N_39_i = (!N_39);
+
+N_20_0 = (N_20_0_1 & N_39_i);
+
+N_34_i = (!N_34);
+
+N_36_i = (!N_36);
+
+N_18_0 = (N_34_i & N_36_i);
+
+N_48_i = (!N_48);
+
+C_c_0 = (C_c_0_1 & N_48_i);
+
+N_33_i = (!N_33);
+
+N_35_i = (!N_35);
+
+N_47_i = (!N_47);
+
+D_c_0 = (D_c_0_1 & D_c_0_2);
+
+F_c_0 = (F_c_0_1 & Z_c);
+
+N_44_1 = (N_48 & W_i);
+
+N_23_0_1 = (N_42_i & N_43_i);
+
+E_c_0_1 = (N_32_i & N_40_i);
+
+E_c_0_2 = (N_41_i & N_46_i);
+
+E_c_0_3 = (E_c_0_1 & E_c_0_2);
+
+N_20_0_1 = (N_37_i & N_38_i);
+
+C_c_0_1 = (N_24 & N_25_i);
+
+D_c_0_1 = (N_33_i & N_34_i);
+
+D_c_0_2 = (N_35_i & N_47_i);
+
+F_c_0_1 = (N_32_i & Y_i);
+
+N_42_1 = (N_25_i_i_0 & X_i);
+
+N_40_1 = (X_i & Y_i);
+
+N_39_1 = (N_24_0 & W_c);
+
+N_37_1 = (N_24 & W_i);
+
+N_35_1 = (W_c & X_i);
+
+
+Reverse-Polarity Equations:
+
+!A = (!N_23_0);
+
+!B = (!N_18_0);
+
+!C = (!C_c);
+
+!D = (!D_c);
+
+!E = (!E_c);
+
+!F = (!F_c);
+
+!G = (!N_20_0);
+
+!W_c = (!W);
+
+!X_c = (!X);
+
+!Y_c = (!Y);
+
+!Z_c = (!Z);
+

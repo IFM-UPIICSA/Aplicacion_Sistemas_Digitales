@@ -1,0 +1,190 @@
+
+
+                                                                      Page 1
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+
+
+
+--------------------------------------------------------------------------------
+
+Module                   : 'codigo'
+
+--------------------------------------------------------------------------------
+
+Input files:
+
+    ABEL PLA file        : convertidores_de_codigo.tt3
+    Device library       : P22V10G.dev
+
+Output files:
+
+    Report file          : convertidores_de_codigo.rpt
+    Programmer load file : convertidores_de_codigo.jed
+
+--------------------------------------------------------------------------------
+
+
+                                                                      Page 2
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+
+P22V10G Programmed Logic:
+--------------------------------------------------------------------------------
+
+
+
+A     = !(  !W & X & !Y & Z 
+         #   !W & X & Y & !Z 
+         #   W & !X & Y & !Z 
+         #   !W & !X & !Y & !Z );
+
+B     = !(  !W & !X & Y 
+         #   !W & !Z 
+         #   !X & !Y & !Z );
+
+C     = !(  !W & !X & Y 
+         #   W & !X & !Y & Z 
+         #   !W & Y & !Z );
+
+D     = (  !W & X & Y 
+         #   W & !X & !Y 
+         #   !W & !Z 
+         #   X & !Z );
+
+E     = !(  !W & X & !Y 
+         #   W & Y & Z 
+         #   X & !Y & Z 
+         #   W & !X & !Y & !Z );
+
+F     = !(  W & !Y & Z 
+         #   X & !Y & Z );
+
+G     = !(  !W & X & Z 
+         #   !W & Y & !Z 
+         #   !X & Y & !Z 
+         #   W & X & !Y & !Z );
+
+
+
+                                                                      Page 3
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+
+P22V10G Chip Diagram:
+--------------------------------------------------------------------------------
+
+
+
+
+                                   P22V10G
+
+                         +---------\       /---------+
+                         |          \     /          |
+                         |           -----           |
+                         |  1                    24  | Vcc                     
+                         |                           |
+                       W |  2                    23  |                         
+                         |                           |
+                       X |  3                    22  |                         
+                         |                           |
+                       Y |  4                    21  |                         
+                         |                           |
+                       Z |  5                    20  | !A                      
+                         |                           |
+                         |  6                    19  | !B                      
+                         |                           |
+                         |  7                    18  | !C                      
+                         |                           |
+                         |  8                    17  | D                       
+                         |                           |
+                         |  9                    16  | !E                      
+                         |                           |
+                         | 10                    15  | !F                      
+                         |                           |
+                         | 11                    14  | !G                      
+                         |                           |
+                     GND | 12                    13  |                         
+                         |                           |
+                         |                           |
+                         `---------------------------'
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 4
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+
+P22V10G Resource Allocations:
+--------------------------------------------------------------------------------
+
+
+
+        Device        | Resource  |   Design    |
+       Resources      | Available | Requirement | Unused
+======================|===========|=============|==============
+                      |           |             |
+Input Pins:           |           |             |
+                      |           |             |
+          Input:      |     12    |      4      |    8 ( 66 %)
+                      |           |             |
+Output Pins:          |           |             |
+                      |           |             |
+          In/Out:     |     10    |      7      |    3 ( 30 %)
+          Output:     |      -    |      -      |    -
+                      |           |             |
+Buried Nodes:         |           |             |
+                      |           |             |
+          Input Reg:  |      -    |      -      |    -
+          Pin Reg:    |     10    |      0      |   10 (100 %)
+          Buried Reg: |      -    |      -      |    -
+
+
+                                                                      Page 5
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+
+P22V10G Product Terms Distribution:
+--------------------------------------------------------------------------------
+
+
+
+            Signal                       |    Pin   | Terms | Terms | Terms
+             Name                        | Assigned | Used  |  Max  | Unused
+=========================================|==========|=======|=======|=======
+A                                        |   20     |   4   |  14   |  10
+B                                        |   19     |   3   |  16   |  13
+C                                        |   18     |   3   |  16   |  13
+D                                        |   17     |   4   |  14   |  10
+E                                        |   16     |   4   |  12   |   8
+F                                        |   15     |   2   |  10   |   8
+G                                        |   14     |   4   |   8   |   4
+
+
+     ==== List of Inputs/Feedbacks ====
+
+Signal Name                              | Pin      | Pin Type
+=========================================|==========|=========
+W                                        |    2     | INPUT
+X                                        |    3     | INPUT
+Y                                        |    4     | INPUT
+Z                                        |    5     | INPUT
+
+
+                                                                      Page 6
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Thu Oct 19 01:05:07 2017
+
+P22V10G Unused Resources:
+--------------------------------------------------------------------------------
+
+
+
+ Pin   |  Pin   |   Product   | Flip-flop
+Number |  Type  |   Terms     |   Type
+=======|========|=============|==========
+    6  |  INPUT |      -      |    -   
+    7  |  INPUT |      -      |    -   
+    8  |  INPUT |      -      |    -   
+    9  |  INPUT |      -      |    -   
+   10  |  INPUT |      -      |    -   
+   11  |  INPUT |      -      |    -   
+   13  |  INPUT |      -      |    -   
+   21  |  BIDIR | NORMAL 12   |    D
+   22  |  BIDIR | NORMAL 10   |    D
+   23  |  BIDIR | NORMAL  8   |    D

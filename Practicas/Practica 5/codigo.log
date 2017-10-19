@@ -1,0 +1,13 @@
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit codigo
+    Number of input ports   : 4
+    Number of output ports  : 7
+    Number of bidir ports   : 0
+    Number of instances     : 81
+    Number of nets          : 85
+
+No design errors found in circuit codigo
+
+WriteBLIF ended normally.
