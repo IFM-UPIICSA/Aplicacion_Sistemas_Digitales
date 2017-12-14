@@ -1,0 +1,85 @@
+<html><body><samp><pre>
+<!@TC:1512642370>
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ISMAELXD
+
+#Implementation: contador-restador-7
+
+<a name=compilerReport1>$ Start of Compile</a>
+#Thu Dec 07 04:26:10 2017
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1512642370> | Running in 64-bit mode 
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N:<a href="@N:CD720:@XP_HELP">CD720</a> : <a href="C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd:123:18:123:22:@N:CD720:@XP_MSG">std.vhd(123)</a><!@TM:1512642370> | Setting time resolution to ns
+@N: : <a href="C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd:6:7:6:13:@N::@XP_MSG">codigo.vhd(6)</a><!@TM:1512642370> | Top entity is set to Codigo.
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd changed - recompiling
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd:6:7:6:13:@N:CD630:@XP_MSG">codigo.vhd(6)</a><!@TM:1512642370> | Synthesizing work.codigo.behavioral 
+<font color=#A52A2A>@W:<a href="@W:CG296:@XP_HELP">CG296</a> : <a href="C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd:21:1:21:8:@W:CG296:@XP_MSG">codigo.vhd(21)</a><!@TM:1512642370> | Incomplete sensitivity list - assuming completeness</font>
+<font color=#A52A2A>@W:<a href="@W:CG290:@XP_HELP">CG290</a> : <a href="C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd:24:5:24:6:@W:CG290:@XP_MSG">codigo.vhd(24)</a><!@TM:1512642370> | Referenced variable x is not in sensitivity list</font>
+Post processing for work.codigo.behavioral
+<font color=#A52A2A>@W:<a href="@W:CL111:@XP_HELP">CL111</a> : <a href="C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd:24:2:24:4:@W:CL111:@XP_MSG">codigo.vhd(24)</a><!@TM:1512642370> | All reachable assignments to Q(0) assign '0'; register removed by optimization</font>
+<font color=#A52A2A>@W:<a href="@W:CL111:@XP_HELP">CL111</a> : <a href="C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd:24:2:24:4:@W:CL111:@XP_MSG">codigo.vhd(24)</a><!@TM:1512642370> | All reachable assignments to Q(3) assign '0'; register removed by optimization</font>
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd:24:2:24:4:@N:CL201:@XP_MSG">codigo.vhd(24)</a><!@TM:1512642370> | Trying to extract state machine for register Q
+Extracted state machine for register Q
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Dec 07 04:26:10 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1512642372> | Running in 64-bit mode 
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\synwork\Codigo_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Dec 07 04:26:12 2017
+
+###########################################################]
+Map & Optimize Report
+
+<a name=mapperReport2>Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014</a>
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1512642372> | Running in 64-bit mode. 
+Encoding state machine Q_1[0:2] (view:work.Codigo(behavioral))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+---------------------------------------
+<a name=resourceUsage3>Resource Usage Report</a>
+
+Simple gate primitives:
+DFFRH           2 uses
+IBUF            2 uses
+OBUF            4 uses
+INV             2 uses
+AND2            1 use
+
+
+@N:<a href="@N:FC100:@XP_HELP">FC100</a> : <!@TM:1512642372> | Timing Report not generated for this device, please use place and route tools for timing analysis. 
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 102MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Dec 07 04:26:12 2017
+
+###########################################################]
+
+</pre></samp></body></html>

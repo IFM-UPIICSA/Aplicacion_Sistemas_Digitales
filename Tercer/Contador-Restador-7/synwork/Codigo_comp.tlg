@@ -1,0 +1,12 @@
+@N: CD630 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":6:7:6:12|Synthesizing work.codigo.behavioral 
+@W: CG296 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":21:1:21:7|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":24:5:24:5|Referenced variable x is not in sensitivity list
+Post processing for work.codigo.behavioral
+@W: CL111 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":24:2:24:3|All reachable assignments to Q(0) assign '0'; register removed by optimization
+@W: CL111 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":24:2:24:3|All reachable assignments to Q(3) assign '0'; register removed by optimization
+@N: CL201 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":24:2:24:3|Trying to extract state machine for register Q
+Extracted state machine for register Q
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10

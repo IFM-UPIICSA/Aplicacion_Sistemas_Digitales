@@ -1,0 +1,7 @@
+Warning 4154: Signal 'E_0_' (pin 1) is not used in the design -
+neither the signal nor its pin will be reassigned.
+$DEVICE         p22v10g    fit       deco2.tt3
+$PINS   12  E_0_:1   S_0_:14   S_1_:15   S_2_:16   S_3_:17   S_4_:18   S_5_:19   
+S_6_:20   E_1_:2   E_2_:3   E_3_:4   E_4_:5   
+--------------------------------------------------------------
+

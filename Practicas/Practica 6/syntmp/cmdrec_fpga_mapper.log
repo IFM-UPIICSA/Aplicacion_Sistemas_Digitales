@@ -1,10 +1,10 @@
 C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6"  -part ispGAL22LV10  -package LJ  -grade -4   -areadelay 0 -minc -RWCheckOnRam 1 -summaryfile "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\synlog\report\codigo_fpga_mapper.xml" -top_level_module  codigo  -multisrs  -oedif  "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.edi"  -freq 1.000  "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\synwork\codigo_mult.srs"  -devicelib  C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.v  -ologparam  "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\syntmp\codigo.plg"  -osyn  "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.srm"  -prjdir  "c:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\"  -prjname  codigo  -log  "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\synlog\codigo_fpga_mapper.srr" 
 rc:0 success:1
-C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.edi|o|1508425153|14053
-C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\synwork\codigo_mult.srs|i|1508425152|2084
-C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.v|i|1401285984|210986
+C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.edi|o|1510195721|15669
+C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\synwork\codigo_mult.srs|i|1510195720|2118
+C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.v|i|1401282384|210986
 "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\syntmp\codigo.plg"|o|0|0
-C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.srm|o|1508425153|5700
-C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\synlog\codigo_fpga_mapper.srr|o|1508425153|1092
-C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399390884|7067648
-C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399393722|8049664
+C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.srm|o|1510195721|6087
+C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\synlog\codigo_fpga_mapper.srr|o|1510195721|1092
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399387284|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399390122|8049664

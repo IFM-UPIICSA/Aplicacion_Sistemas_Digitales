@@ -1,0 +1,52 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Thu Dec 07 04:26:10 2017
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch c:/users/ismae/documents/github repos/aplicacion_sistemas_digitales/tercer/contador-restador-7\Codigo.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\Codigo.srr"
+
+Running Codigo|contador-restador-7
+
+Running: Compile on Codigo|contador-restador-7
+
+Running: Compile Process on Codigo|contador-restador-7
+
+Running: Compile Input on Codigo|contador-restador-7
+Copied C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\synwork\Codigo_comp.srs to C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\Codigo.srs
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Running: Multi-srs Generator on Codigo|contador-restador-7
+Copied C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\synwork\Codigo_comp.srs to C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\synwork\Codigo_s.srs
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Copied C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\synwork\Codigo_mult.srs to C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\Codigo.srs
+Copied C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\Codigo.srr to C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.srf
+Complete: Compile Process on Codigo|contador-restador-7
+Complete: Compile on Codigo|contador-restador-7
+
+Running: Map on Codigo|contador-restador-7
+
+Running: Map & Optimize on Codigo|contador-restador-7
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Complete: Map on Codigo|contador-restador-7
+Complete: Logic Synthesis on Codigo|contador-restador-7
+
+exit status=0
+
+exit status=0
+

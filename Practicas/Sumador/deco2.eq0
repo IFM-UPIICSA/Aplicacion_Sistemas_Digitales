@@ -1,0 +1,159 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design deco2 created Thu Nov 09 02:57:24 2017
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   S_6_ 
+   1/1        1        1    Pin   S_5_ 
+   1/1        1        1    Pin   S_4_ 
+   1/1        1        1    Pin   S_3_ 
+   1/1        1        1    Pin   S_2_ 
+   1/1        1        1    Pin   S_1_ 
+   1/1        1        1    Pin   S_0_ 
+   0          0        1    Node  gnd_n_n 
+   2          2        1    Node  s_1_5_4__n_5_n 
+   1          2        1    Node  s_1_5_4__n_6_n 
+   1          2        1    Node  s_1_5_4__n_2_n 
+   1          2        1    Node  N_17 
+   2          2        1    Node  s_1_5_4__n_3_n 
+   2          2        1    Node  s_1_5_4__n_4_n 
+   1          1        1    Node  s_1_5_4__n_5_i_n 
+   1          1        1    Node  s_1_5_4__n_6_i_n 
+   1          1        1    Node  s_1_5_4__n_2_i_n 
+   1          1        1    Node  e_i_3__n 
+   1          1        1    Node  e_i_4__n 
+   1          1        1    Node  e_i_2__n 
+   1/1        1        1    Node  e_c_1__n 
+   1/1        1        1    Node  e_c_2__n 
+   1/1        1        1    Node  e_c_3__n 
+   1/1        1        1    Node  e_c_4__n 
+   1          2        1    Node  N_9_i 
+   1          1        1    Node  N_17_i 
+   1          2        1    Node  N_16_i 
+   1          1        1    Node  s_1_5_4__m4_un3_n 
+   1          2        1    Node  s_1_5_4__m4_un1_n 
+   1          2        1    Node  s_1_5_4__m4_un0_n 
+   1          1        1    Node  s_1_5_4__m3_un3_n 
+   1          2        1    Node  s_1_5_4__m3_un1_n 
+   1          2        1    Node  s_1_5_4__m3_un0_n 
+   1          1        1    Node  s_1_5_4__m2_un3_n 
+   1          2        1    Node  s_1_5_4__m2_un1_n 
+   1          2        1    Node  s_1_5_4__m2_un0_n 
+   1/1        1        1    Node  e_0__n 
+=========
+  39/12         Best P-Term Total: 39
+                       Total Pins: 12
+                      Total Nodes: 30
+            Average P-Term/Output: 1
+
+
+Equations:
+
+S_6_ = (N_16_i);
+
+S_5_ = (s_1_5_4__n_6_i_n);
+
+S_4_ = (s_1_5_4__n_5_i_n);
+
+S_3_ = (N_16_i);
+
+S_2_ = (N_9_i);
+
+S_1_ = (gnd_n_n);
+
+S_0_ = (N_16_i);
+
+gnd_n_n = (0);
+
+s_1_5_4__n_5_n = (s_1_5_4__m4_un1_n
+     # s_1_5_4__m4_un0_n);
+
+s_1_5_4__n_6_n = (e_i_4__n & s_1_5_4__n_3_n);
+
+s_1_5_4__n_2_n = (e_c_1__n & e_c_3__n);
+
+N_17 = (e_i_2__n & e_i_3__n);
+
+s_1_5_4__n_3_n = (s_1_5_4__m2_un1_n
+     # s_1_5_4__m2_un0_n);
+
+s_1_5_4__n_4_n = (s_1_5_4__m3_un1_n
+     # s_1_5_4__m3_un0_n);
+
+s_1_5_4__n_5_i_n = (!s_1_5_4__n_5_n);
+
+s_1_5_4__n_6_i_n = (!s_1_5_4__n_6_n);
+
+s_1_5_4__n_2_i_n = (!s_1_5_4__n_2_n);
+
+e_i_3__n = (!e_c_3__n);
+
+e_i_4__n = (!e_c_4__n);
+
+e_i_2__n = (!e_c_2__n);
+
+e_c_1__n = (E_1_);
+
+e_c_2__n = (E_2_);
+
+e_c_3__n = (E_3_);
+
+e_c_4__n = (E_4_);
+
+N_9_i = (e_c_4__n & s_1_5_4__n_4_n);
+
+N_17_i = (!N_17);
+
+N_16_i = (e_c_4__n & N_17_i);
+
+s_1_5_4__m4_un3_n = (!e_c_4__n);
+
+s_1_5_4__m4_un1_n = (s_1_5_4__n_4_n & e_c_4__n);
+
+s_1_5_4__m4_un0_n = (s_1_5_4__n_3_n & s_1_5_4__m4_un3_n);
+
+s_1_5_4__m3_un3_n = (!e_c_2__n);
+
+s_1_5_4__m3_un1_n = (s_1_5_4__n_2_i_n & e_c_2__n);
+
+s_1_5_4__m3_un0_n = (e_c_3__n & s_1_5_4__m3_un3_n);
+
+s_1_5_4__m2_un3_n = (!e_c_2__n);
+
+s_1_5_4__m2_un1_n = (e_i_3__n & e_c_2__n);
+
+s_1_5_4__m2_un0_n = (s_1_5_4__n_2_i_n & s_1_5_4__m2_un3_n);
+
+e_0__n = (E_0_);
+
+
+Reverse-Polarity Equations:
+
+!S_6_ = (!N_16_i);
+
+!S_5_ = (!s_1_5_4__n_6_i_n);
+
+!S_4_ = (!s_1_5_4__n_5_i_n);
+
+!S_3_ = (!N_16_i);
+
+!S_2_ = (!N_9_i);
+
+!S_1_ = (!gnd_n_n);
+
+!S_0_ = (!N_16_i);
+
+!e_c_1__n = (!E_1_);
+
+!e_c_2__n = (!E_2_);
+
+!e_c_3__n = (!E_3_);
+
+!e_c_4__n = (!E_4_);
+
+!e_0__n = (!E_0_);
+

@@ -1,0 +1,5 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MO106 :"c:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\sumador\deco2.vhd":57:2:57:10|Found ROM, 'S_1[5:4]', 32 words by 2 bits 
+@N: MO106 :"c:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\sumador\deco2.vhd":57:2:57:10|Found ROM, 'S_1[2]', 32 words by 1 bits 
+@N: MO106 :"c:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\sumador\deco2.vhd":57:2:57:10|Found ROM, 'S_1[0]', 32 words by 1 bits 
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.

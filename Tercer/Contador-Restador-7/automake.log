@@ -1,0 +1,202 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: JEDEC File
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\Synpwrap.exe -e Codigo -target ispGAL -pro '
+
+Copyright (c) 1991-2010 Lattice Semiconductor Corporation,  All rights reserved.
+Version : 2.0.00.17.20.15
+
+Done sucessfully with exit code 0.
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ISMAELXD
+
+#Implementation: contador-restador-7
+
+$ Start of Compile
+#Thu Dec 07 04:26:10 2017
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":6:7:6:12|Top entity is set to Codigo.
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd changed - recompiling
+@N: CD630 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":6:7:6:12|Synthesizing work.codigo.behavioral 
+@W: CG296 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":21:1:21:7|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":24:5:24:5|Referenced variable x is not in sensitivity list
+Post processing for work.codigo.behavioral
+@W: CL111 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":24:2:24:3|All reachable assignments to Q(0) assign '0'; register removed by optimization
+@W: CL111 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":24:2:24:3|All reachable assignments to Q(3) assign '0'; register removed by optimization
+@N: CL201 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\codigo.vhd":24:2:24:3|Trying to extract state machine for register Q
+Extracted state machine for register Q
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Dec 07 04:26:10 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\tercer\contador-restador-7\synwork\Codigo_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Dec 07 04:26:12 2017
+
+###########################################################]
+
+Synplicity VHDL/Verilog HDL Synthesizer finished successfully
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\edif2blf.exe -edf "Codigo.edi" -out "Codigo.bl0" -err automake.err -log "Codigo.log" -prj contador_restador_7 -lib "C:\ispLEVER_Classic2_0\ispcpld/dat/mach.edn" -cvt YES -net_Vcc VCC -net_GND GND -nbx -dse -tlw'
+
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit Codigo
+    Number of input ports   : 2
+    Number of output ports  : 1
+    Number of bidir ports   : 0
+    Number of instances     : 13
+    Number of nets          : 15
+
+No design errors found in circuit Codigo
+
+WriteBLIF ended normally.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\iblifopt.exe "Codigo.bl0" -red bypin choose -collapse -pterms 8 -family -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file Codigo.bl0...
+Node q_1_i_0__n has been collapsed.
+Node q_1_i_1__n has been collapsed.
+Node X_c has been collapsed.
+Node Clock_c has been collapsed.
+Node gnd_n_n has been collapsed.
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file Codigo.bl1...
+
+BLIFOPT complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\iblflink.exe "Codigo.bl1" -o "contador_restador_7.bl2" -omod Codigo -family -err automake.err -gui'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Top-level file: 'Codigo.bl1'
+
+Hierarchical BLIF: 'contador_restador_7.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\iblifopt.exe contador_restador_7.bl2 -red bypin choose -sweep -collapse all -pterms 8 -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file contador_restador_7.bl2...
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file contador_restador_7.bl3...
+
+BLIFOPT complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\idiofft.exe contador_restador_7.bl3 -pla -o contador_restador_7.tt2 -dev p22v10g -define N -err automake.err -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: contador_restador_7.bl3.
+Output file: contador_restador_7.tt2.
+Cross reference file: contador_restador_7.xrf.
+
+......
+Shortening signal names...
+Writing signal name cross reference file contador_restador_7.xrf... 
+
+DIOFFT complete. - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\fit.exe contador_restador_7.tt2 -dev p22v10g -str -err automake.err -gui'
+
+FIT  Generic Device Fitter
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: 'contador_restador_7.tt2'
+Device 'p22v10g'
+Warning 4045:The preassignment of X to pin 1 cannot be maintained - preassignment overridden.
+Design FITS
+Pin-assigned pla: 'contador_restador_7.tt3'
+
+FIT complete.  Time: 1 second.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\fuseasm.exe contador_restador_7.tt3 -dev p22v10g -o contador_restador_7.jed -ivec NoInput.tmv -rep contador_restador_7.rpt -doc brief -con ptblown -for brief -err automake.err -gui'
+
+FUSEASM  Fusemap Assembler
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Note 5144: Could not open vector file NoInput.tmv
+
+Input file: 'contador_restador_7.tt3'
+Device: 'P22V10G'
+Building model...
+Choosing best polarities...
+Mapping equations...
+6 of 132 terms used; 0 vectors loaded
+Programmer load file: 'contador_restador_7.jed'
+Generating report...
+Report file: 'contador_restador_7.rpt'
+
+FUSEASM complete.  Time: 1 second 
+
+Done: completed successfully.

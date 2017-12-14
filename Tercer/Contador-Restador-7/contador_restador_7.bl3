@@ -1,0 +1,30 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Thu Dec 07 04:26:17 2017
+#$ MODULE codigo
+#$ PINS 6 Q_3_:20'ke'  Clock X:1'ke'  Q_0_:17'ke'  Q_2_:19'ke'  Q_1_:18'ke' 
+
+.model codigo
+.inputs Clock.BLIF X.BLIF Q_1_.BLIF Q_2_.BLIF
+.outputs Q_3_ Q_0_ Q_1_.D Q_1_.C Q_1_.AR Q_2_.D Q_2_.C Q_2_.AR
+.names Q_3_
+.names Q_0_
+.names Q_1_.BLIF Q_2_.BLIF Q_1_.D
+00 1
+1- 0
+-1 0
+.names Clock.BLIF Q_1_.C
+1 1
+0 0
+.names X.BLIF Q_1_.AR
+1 1
+0 0
+.names Q_1_.BLIF Q_2_.D
+1 1
+0 0
+.names Clock.BLIF Q_2_.C
+1 1
+0 0
+.names X.BLIF Q_2_.AR
+1 1
+0 0
+.end

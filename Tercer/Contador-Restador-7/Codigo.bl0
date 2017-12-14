@@ -1,0 +1,39 @@
+#$ DATE Thu Dec 07 04:26:17 2017
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE codigo
+#$ PINS 6 Q_3_:20'ke'  Clock X:1'ke'  Q_2_:19'ke'  Q_1_:18'ke'  Q_0_:17'ke' 
+#$ NODES 7 gnd_n_n Q_1_0reg Q_1_1reg q_1_i_0__n q_1_i_1__n Clock_c X_c 
+.model codigo
+.inputs Clock.BLIF X.BLIF gnd_n_n.BLIF Q_1_0reg.BLIF Q_1_1reg.BLIF q_1_i_0__n.BLIF q_1_i_1__n.BLIF Clock_c.BLIF X_c.BLIF  
+.outputs Q_3_ Q_2_ Q_1_ Q_0_ Q_1_0reg.D Q_1_0reg.C Q_1_0reg.AR Q_1_1reg.D Q_1_1reg.C Q_1_1reg.AR gnd_n_n \
+  q_1_i_0__n q_1_i_1__n Clock_c X_c
+.names  Clock.BLIF Clock_c
+1 1
+.names  X.BLIF X_c
+1 1
+.names  gnd_n_n.BLIF Q_0_
+1 1
+.names  Q_1_0reg.BLIF Q_1_
+1 1
+.names  Q_1_1reg.BLIF Q_2_
+1 1
+.names  gnd_n_n.BLIF Q_3_
+1 1
+.names  Q_1_0reg.BLIF q_1_i_0__n
+0 1
+.names  Q_1_1reg.BLIF q_1_i_1__n
+0 1
+.names  q_1_i_0__n.BLIF q_1_i_1__n.BLIF Q_1_0reg.D
+11 1
+.names  gnd_n_n
+.names  Clock_c.BLIF Q_1_0reg.C
+1 1
+.names  X_c.BLIF Q_1_0reg.AR
+1 1
+.names  Q_1_0reg.BLIF Q_1_1reg.D
+1 1
+.names  Clock_c.BLIF Q_1_1reg.C
+1 1
+.names  X_c.BLIF Q_1_1reg.AR
+1 1
+.end

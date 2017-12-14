@@ -1,9 +1,11 @@
 Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
+File C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe changed - recompiling
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\synwork\codigo_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Oct 19 09:59:12 2017
+# Wed Nov 08 20:48:40 2017
 
 ###########################################################]

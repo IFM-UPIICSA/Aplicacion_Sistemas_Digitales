@@ -1,0 +1,193 @@
+#$ DATE Thu Nov 09 03:19:26 2017
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE deco
+#$ PINS 12 E_4_:5'ke'  S_6_:20'ke'  E_3_:4'ke'  E_2_:3'ke'  E_1_:2'ke'  E_0_:1'ke'  S_5_:19'ke'  S_4_:18'ke'  S_3_:17'ke'  S_2_:16'ke'  S_1_:15'ke'  S_0_:14'ke' 
+#$ NODES 73 s_1_0__n s_1_4__n N_11 N_13 N_20 N_58 N_60 N_28 N_29 N_30 \
+#  N_45 N_46 N_49 N_52 N_53 N_54 N_61 N_62 N_64 N_65 \
+#  N_10_i N_15_i e_i_2__n N_10_i_i_0 e_i_3__n e_i_1__n N_15_i_i_0 e_i_0__n e_c_0__n e_c_1__n \
+#  e_c_2__n e_c_3__n e_c_4__n e_c_i_4__n N_13_0 N_61_i N_62_i N_11_0 s_1_0_0__n N_14_i \
+#  N_53_i N_54_i N_64_i s_1_0_4__n N_29_i N_52_i N_21_i N_28_i N_45_i N_46_i \
+#  N_49_i N_12_i N_30_i N_16_i N_20_i N_58_i N_60_i N_19_i s_1_0_1_4__n s_1_0_2_4__n \
+#  s_1_0_3_4__n N_12_i_1 N_12_i_2 N_16_i_1 N_19_i_1 N_61_1 N_52_1 N_49_1 N_46_1 N_30_1 \
+#  N_28_1 N_60_1 N_58_1 
+.model deco
+.inputs E_4_.BLIF E_3_.BLIF E_2_.BLIF E_1_.BLIF E_0_.BLIF s_1_0__n.BLIF s_1_4__n.BLIF N_11.BLIF N_13.BLIF \
+  N_20.BLIF N_58.BLIF N_60.BLIF N_28.BLIF N_29.BLIF N_30.BLIF N_45.BLIF N_46.BLIF N_49.BLIF \
+  N_52.BLIF N_53.BLIF N_54.BLIF N_61.BLIF N_62.BLIF N_64.BLIF N_65.BLIF N_10_i.BLIF N_15_i.BLIF \
+  e_i_2__n.BLIF N_10_i_i_0.BLIF e_i_3__n.BLIF e_i_1__n.BLIF N_15_i_i_0.BLIF e_i_0__n.BLIF e_c_0__n.BLIF e_c_1__n.BLIF e_c_2__n.BLIF \
+  e_c_3__n.BLIF e_c_4__n.BLIF e_c_i_4__n.BLIF N_13_0.BLIF N_61_i.BLIF N_62_i.BLIF N_11_0.BLIF s_1_0_0__n.BLIF N_14_i.BLIF \
+  N_53_i.BLIF N_54_i.BLIF N_64_i.BLIF s_1_0_4__n.BLIF N_29_i.BLIF N_52_i.BLIF N_21_i.BLIF N_28_i.BLIF N_45_i.BLIF \
+  N_46_i.BLIF N_49_i.BLIF N_12_i.BLIF N_30_i.BLIF N_16_i.BLIF N_20_i.BLIF N_58_i.BLIF N_60_i.BLIF N_19_i.BLIF \
+  s_1_0_1_4__n.BLIF s_1_0_2_4__n.BLIF s_1_0_3_4__n.BLIF N_12_i_1.BLIF N_12_i_2.BLIF N_16_i_1.BLIF N_19_i_1.BLIF N_61_1.BLIF N_52_1.BLIF \
+  N_49_1.BLIF N_46_1.BLIF N_30_1.BLIF N_28_1.BLIF N_60_1.BLIF N_58_1.BLIF  
+.outputs S_6_ S_5_ S_4_ S_3_ S_2_ S_1_ S_0_ s_1_0__n s_1_4__n N_11 N_13 \
+  N_20 N_58 N_60 N_28 N_29 N_30 N_45 N_46 N_49 N_52 N_53 \
+  N_54 N_61 N_62 N_64 N_65 N_10_i N_15_i e_i_2__n N_10_i_i_0 e_i_3__n e_i_1__n \
+  N_15_i_i_0 e_i_0__n e_c_0__n e_c_1__n e_c_2__n e_c_3__n e_c_4__n e_c_i_4__n N_13_0 N_61_i N_62_i \
+  N_11_0 s_1_0_0__n N_14_i N_53_i N_54_i N_64_i s_1_0_4__n N_29_i N_52_i N_21_i N_28_i \
+  N_45_i N_46_i N_49_i N_12_i N_30_i N_16_i N_20_i N_58_i N_60_i N_19_i s_1_0_1_4__n \
+  s_1_0_2_4__n s_1_0_3_4__n N_12_i_1 N_12_i_2 N_16_i_1 N_19_i_1 N_61_1 N_52_1 N_49_1 N_46_1 N_30_1 \
+  N_28_1 N_60_1 N_58_1
+.names  E_0_.BLIF e_c_0__n
+1 1
+.names  E_1_.BLIF e_c_1__n
+1 1
+.names  E_2_.BLIF e_c_2__n
+1 1
+.names  E_3_.BLIF e_c_3__n
+1 1
+.names  E_4_.BLIF e_c_4__n
+1 1
+.names  s_1_0__n.BLIF S_0_
+1 1
+.names  N_12_i.BLIF S_1_
+1 1
+.names  N_14_i.BLIF S_2_
+1 1
+.names  N_16_i.BLIF S_3_
+1 1
+.names  s_1_4__n.BLIF S_4_
+1 1
+.names  N_19_i.BLIF S_5_
+1 1
+.names  N_21_i.BLIF S_6_
+1 1
+.names  N_28_1.BLIF N_10_i_i_0.BLIF N_28
+11 1
+.names  e_i_0__n.BLIF N_13_0.BLIF N_60_1
+11 1
+.names  N_60_1.BLIF N_65.BLIF N_60
+11 1
+.names  e_i_0__n.BLIF N_10_i_i_0.BLIF N_58_1
+11 1
+.names  N_58_1.BLIF N_64.BLIF N_58
+11 1
+.names  N_28_i.BLIF N_29_i.BLIF N_16_i_1
+11 1
+.names  N_16_i_1.BLIF N_30_i.BLIF N_16_i
+11 1
+.names  N_20_i.BLIF N_58_i.BLIF N_19_i_1
+11 1
+.names  N_19_i_1.BLIF N_60_i.BLIF N_19_i
+11 1
+.names  e_c_3__n.BLIF e_i_1__n.BLIF N_61_1
+11 1
+.names  N_61_1.BLIF N_64.BLIF N_61
+11 1
+.names  N_15_i_i_0.BLIF e_c_0__n.BLIF N_52_1
+11 1
+.names  N_52_1.BLIF N_10_i_i_0.BLIF N_52
+11 1
+.names  e_c_0__n.BLIF e_c_2__n.BLIF N_49_1
+11 1
+.names  N_49_1.BLIF N_65.BLIF N_49
+11 1
+.names  N_13_0.BLIF e_c_3__n.BLIF N_46_1
+11 1
+.names  N_46_1.BLIF e_i_1__n.BLIF N_46
+11 1
+.names  e_c_0__n.BLIF N_13_0.BLIF N_30_1
+11 1
+.names  N_30_1.BLIF N_65.BLIF N_30
+11 1
+.names  N_13.BLIF e_c_0__n.BLIF N_28_1
+11 1
+.names  N_28.BLIF N_28_i
+0 1
+.names  N_45.BLIF N_45_i
+0 1
+.names  N_46.BLIF N_46_i
+0 1
+.names  N_49.BLIF N_49_i
+0 1
+.names  N_30.BLIF N_30_i
+0 1
+.names  N_20.BLIF N_20_i
+0 1
+.names  N_58.BLIF N_58_i
+0 1
+.names  N_60.BLIF N_60_i
+0 1
+.names  N_64_i.BLIF e_i_0__n.BLIF s_1_0_1_4__n
+11 1
+.names  N_10_i.BLIF N_53_i.BLIF s_1_0_2_4__n
+11 1
+.names  s_1_0_1_4__n.BLIF s_1_0_2_4__n.BLIF s_1_0_3_4__n
+11 1
+.names  s_1_0_3_4__n.BLIF N_54_i.BLIF s_1_0_4__n
+11 1
+.names  N_28_i.BLIF N_45_i.BLIF N_12_i_1
+11 1
+.names  N_46_i.BLIF N_49_i.BLIF N_12_i_2
+11 1
+.names  N_12_i_1.BLIF N_12_i_2.BLIF N_12_i
+11 1
+.names  e_c_4__n.BLIF e_c_i_4__n
+0 1
+.names  N_13_0.BLIF N_13
+0 1
+.names  N_61.BLIF N_61_i
+0 1
+.names  N_62.BLIF N_62_i
+0 1
+.names  N_11_0.BLIF N_11
+0 1
+.names  s_1_0_0__n.BLIF s_1_0__n
+0 1
+.names  N_53.BLIF N_53_i
+0 1
+.names  N_54.BLIF N_54_i
+0 1
+.names  N_64.BLIF N_64_i
+0 1
+.names  s_1_0_4__n.BLIF s_1_4__n
+0 1
+.names  N_29.BLIF N_29_i
+0 1
+.names  N_52.BLIF N_52_i
+0 1
+.names  N_10_i_i_0.BLIF N_15_i_i_0.BLIF s_1_0_0__n
+11 1
+.names  e_c_1__n.BLIF e_c_3__n.BLIF N_10_i
+01 1
+10 1
+.names  N_61_i.BLIF N_62_i.BLIF N_11_0
+11 1
+.names  e_c_2__n.BLIF e_i_2__n
+0 1
+.names  e_c_2__n.BLIF e_c_i_4__n.BLIF N_13_0
+11 1
+.names  e_c_2__n.BLIF e_c_4__n.BLIF N_15_i
+01 1
+10 1
+.names  e_c_0__n.BLIF N_11.BLIF N_20
+11 1
+.names  e_c_0__n.BLIF e_i_0__n
+0 1
+.names  e_i_0__n.BLIF N_11.BLIF N_29
+11 1
+.names  N_15_i_i_0.BLIF N_65.BLIF N_45
+11 1
+.names  N_15_i.BLIF N_15_i_i_0
+0 1
+.names  e_c_3__n.BLIF N_13.BLIF N_53
+11 1
+.names  e_i_3__n.BLIF N_13_0.BLIF N_54
+11 1
+.names  e_c_1__n.BLIF e_i_1__n
+0 1
+.names  N_10_i_i_0.BLIF N_13_0.BLIF N_62
+11 1
+.names  e_c_4__n.BLIF e_i_2__n.BLIF N_64
+11 1
+.names  e_c_3__n.BLIF e_i_3__n
+0 1
+.names  e_c_1__n.BLIF e_i_3__n.BLIF N_65
+11 1
+.names  N_29_i.BLIF N_52_i.BLIF N_21_i
+11 1
+.names  N_10_i.BLIF N_10_i_i_0
+0 1
+.names  e_i_0__n.BLIF N_11_0.BLIF N_14_i
+11 1
+.end

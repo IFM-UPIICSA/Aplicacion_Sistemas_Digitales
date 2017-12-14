@@ -1,0 +1,6 @@
+@E: CD126 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_sumador.vhd":14:0:14:0|Expecting identifier
+@E: CD415 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_sumador.vhd":24:24:24:25|Expecting keyword of
+@E: CD632 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_suma.vhd":6:15:6:16|duplicate entity name semi_su
+@E: CD214 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_suma.vhd":32:0:32:0|Not a concurrent statement
+@E|Parse errors encountered - exiting
+

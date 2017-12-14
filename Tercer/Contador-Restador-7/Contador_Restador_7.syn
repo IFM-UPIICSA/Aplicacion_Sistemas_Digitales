@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 2.0 
+PROJECT Contador_Restador_7
+DESIGN contador_restador_7 Normal
+DEVKIT GAL22V10D-10LP
+ENTRY Pure VHDL
+MODULE codigo.vhd
+MODSTYLE Codigo Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE Codigo

@@ -1,0 +1,70 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed Nov 08 20:48:47 2017
+#$ MODULE codigo
+#$ PINS 13 S_0_:14'ke'  A_3_:4'ke'  B_3_:8'ke'  S_3_:17'ke'  CS:18'ke'  A_2_:3'ke'  A_1_:2'ke'  A_0_:1'ke'  B_2_:7'ke'  B_1_:6'ke'  B_0_:5'ke'  S_2_:16'ke'  S_1_:15'ke' 
+#$ NODES 2 c_0_1__n c_0_2__n
+
+.model codigo
+.inputs A_3_.BLIF B_3_.BLIF A_2_.BLIF A_1_.BLIF A_0_.BLIF B_2_.BLIF B_1_.BLIF \
+B_0_.BLIF c_0_1__n.BLIF c_0_2__n.BLIF
+.outputs S_3_ CS S_2_ S_1_ S_0_ c_0_1__n c_0_2__n
+.names A_3_.BLIF B_3_.BLIF c_0_2__n.BLIF S_3_
+000 1
+110 1
+101 1
+011 1
+100 0
+010 0
+001 0
+111 0
+.names A_3_.BLIF B_3_.BLIF c_0_2__n.BLIF CS
+11- 1
+-10 1
+1-0 1
+00- 0
+-01 0
+0-1 0
+.names A_2_.BLIF B_2_.BLIF c_0_1__n.BLIF S_2_
+000 1
+110 1
+101 1
+011 1
+100 0
+010 0
+001 0
+111 0
+.names A_1_.BLIF A_0_.BLIF B_1_.BLIF B_0_.BLIF S_1_
+100- 1
+0101 1
+001- 1
+1111 1
+1-00 1
+0-10 1
+000- 0
+1101 0
+101- 0
+0111 0
+0-00 0
+1-10 0
+.names A_0_.BLIF B_0_.BLIF S_0_
+10 1
+01 1
+00 0
+11 0
+.names A_1_.BLIF A_0_.BLIF B_1_.BLIF B_0_.BLIF c_0_1__n
+-00- 1
+00-- 1
+0-0- 1
+--00 1
+0--0 1
+1-1- 0
+-111 0
+11-1 0
+.names A_2_.BLIF B_2_.BLIF c_0_1__n.BLIF c_0_2__n
+00- 1
+-01 1
+0-1 1
+11- 0
+-10 0
+1-0 0
+.end

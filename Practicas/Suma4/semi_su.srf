@@ -1,0 +1,29 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ISMAELXD
+
+#Implementation: suma4
+
+$ Start of Compile
+#Thu Nov 09 04:54:09 2017
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_sumador.vhd":6:7:6:13|Top entity is set to semi_su.
+@E: CD126 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_sumador.vhd":14:0:14:0|Expecting identifier
+@E: CD415 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_sumador.vhd":24:24:24:25|Expecting keyword of
+2 errors parsing file C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_sumador.vhd
+@END
+@E: CD632 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_suma.vhd":6:15:6:16|duplicate entity name semi_su
+@E: CD214 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_suma.vhd":32:0:32:0|Not a concurrent statement
+4 errors parsing file C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_suma.vhd
+@END
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 09 04:54:10 2017
+
+###########################################################]

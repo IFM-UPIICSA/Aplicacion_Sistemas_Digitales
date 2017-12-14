@@ -1,0 +1,287 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design deco created Thu Nov 09 02:31:24 2017
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   S_6_ 
+   1/1        1        1    Pin   S_5_ 
+   1/1        1        1    Pin   S_4_ 
+   1/1        1        1    Pin   S_3_ 
+   1/1        1        1    Pin   S_2_ 
+   1/1        1        1    Pin   S_1_ 
+   1/1        1        1    Pin   S_0_ 
+   1          1        1    Node  s_1_0__n 
+   1          1        1    Node  s_1_4__n 
+   1          1        1    Node  N_11 
+   1          1        1    Node  N_13 
+   1          2        1    Node  N_20 
+   1          2        1    Node  N_58 
+   1          2        1    Node  N_60 
+   1          2        1    Node  N_28 
+   1          2        1    Node  N_29 
+   1          2        1    Node  N_30 
+   1          2        1    Node  N_45 
+   1          2        1    Node  N_46 
+   1          2        1    Node  N_49 
+   1          2        1    Node  N_52 
+   1          2        1    Node  N_53 
+   1          2        1    Node  N_54 
+   1          2        1    Node  N_61 
+   1          2        1    Node  N_62 
+   1          2        1    Node  N_64 
+   1          2        1    Node  N_65 
+   2          2        1    Node  N_10_i 
+   2          2        1    Node  N_15_i 
+   1          1        1    Node  e_i_2__n 
+   1          1        1    Node  N_10_i_i_0 
+   1          1        1    Node  e_i_3__n 
+   1          1        1    Node  e_i_1__n 
+   1          1        1    Node  N_15_i_i_0 
+   1          1        1    Node  e_i_0__n 
+   1/1        1        1    Node  e_c_0__n 
+   1/1        1        1    Node  e_c_1__n 
+   1/1        1        1    Node  e_c_2__n 
+   1/1        1        1    Node  e_c_3__n 
+   1/1        1        1    Node  e_c_4__n 
+   1          1        1    Node  e_c_i_4__n 
+   1          2        1    Node  N_13_0 
+   1          1        1    Node  N_61_i 
+   1          1        1    Node  N_62_i 
+   1          2        1    Node  N_11_0 
+   1          2        1    Node  s_1_0_0__n 
+   1          2        1    Node  N_14_i 
+   1          1        1    Node  N_53_i 
+   1          1        1    Node  N_54_i 
+   1          1        1    Node  N_64_i 
+   1          2        1    Node  s_1_0_4__n 
+   1          1        1    Node  N_29_i 
+   1          1        1    Node  N_52_i 
+   1          2        1    Node  N_21_i 
+   1          1        1    Node  N_28_i 
+   1          1        1    Node  N_45_i 
+   1          1        1    Node  N_46_i 
+   1          1        1    Node  N_49_i 
+   1          2        1    Node  N_12_i 
+   1          1        1    Node  N_30_i 
+   1          2        1    Node  N_16_i 
+   1          1        1    Node  N_20_i 
+   1          1        1    Node  N_58_i 
+   1          1        1    Node  N_60_i 
+   1          2        1    Node  N_19_i 
+   1          2        1    Node  s_1_0_1_4__n 
+   1          2        1    Node  s_1_0_2_4__n 
+   1          2        1    Node  s_1_0_3_4__n 
+   1          2        1    Node  N_12_i_1 
+   1          2        1    Node  N_12_i_2 
+   1          2        1    Node  N_16_i_1 
+   1          2        1    Node  N_19_i_1 
+   1          2        1    Node  N_61_1 
+   1          2        1    Node  N_52_1 
+   1          2        1    Node  N_49_1 
+   1          2        1    Node  N_46_1 
+   1          2        1    Node  N_30_1 
+   1          2        1    Node  N_28_1 
+   1          2        1    Node  N_60_1 
+   1          2        1    Node  N_58_1 
+=========
+  82/12         Best P-Term Total: 82
+                       Total Pins: 12
+                      Total Nodes: 73
+            Average P-Term/Output: 1
+
+
+Equations:
+
+S_6_ = (N_21_i);
+
+S_5_ = (N_19_i);
+
+S_4_ = (s_1_4__n);
+
+S_3_ = (N_16_i);
+
+S_2_ = (N_14_i);
+
+S_1_ = (N_12_i);
+
+S_0_ = (s_1_0__n);
+
+s_1_0__n = (!s_1_0_0__n);
+
+s_1_4__n = (!s_1_0_4__n);
+
+N_11 = (!N_11_0);
+
+N_13 = (!N_13_0);
+
+N_20 = (e_c_0__n & N_11);
+
+N_58 = (N_58_1 & N_64);
+
+N_60 = (N_60_1 & N_65);
+
+N_28 = (N_28_1 & N_10_i_i_0);
+
+N_29 = (e_i_0__n & N_11);
+
+N_30 = (N_30_1 & N_65);
+
+N_45 = (N_15_i_i_0 & N_65);
+
+N_46 = (N_46_1 & e_i_1__n);
+
+N_49 = (N_49_1 & N_65);
+
+N_52 = (N_52_1 & N_10_i_i_0);
+
+N_53 = (e_c_3__n & N_13);
+
+N_54 = (e_i_3__n & N_13_0);
+
+N_61 = (N_61_1 & N_64);
+
+N_62 = (N_10_i_i_0 & N_13_0);
+
+N_64 = (e_c_4__n & e_i_2__n);
+
+N_65 = (e_c_1__n & e_i_3__n);
+
+N_10_i = (!e_c_1__n & e_c_3__n
+     # e_c_1__n & !e_c_3__n);
+
+N_15_i = (!e_c_2__n & e_c_4__n
+     # e_c_2__n & !e_c_4__n);
+
+e_i_2__n = (!e_c_2__n);
+
+N_10_i_i_0 = (!N_10_i);
+
+e_i_3__n = (!e_c_3__n);
+
+e_i_1__n = (!e_c_1__n);
+
+N_15_i_i_0 = (!N_15_i);
+
+e_i_0__n = (!e_c_0__n);
+
+e_c_0__n = (E_0_);
+
+e_c_1__n = (E_1_);
+
+e_c_2__n = (E_2_);
+
+e_c_3__n = (E_3_);
+
+e_c_4__n = (E_4_);
+
+e_c_i_4__n = (!e_c_4__n);
+
+N_13_0 = (e_c_2__n & e_c_i_4__n);
+
+N_61_i = (!N_61);
+
+N_62_i = (!N_62);
+
+N_11_0 = (N_61_i & N_62_i);
+
+s_1_0_0__n = (N_10_i_i_0 & N_15_i_i_0);
+
+N_14_i = (e_i_0__n & N_11_0);
+
+N_53_i = (!N_53);
+
+N_54_i = (!N_54);
+
+N_64_i = (!N_64);
+
+s_1_0_4__n = (s_1_0_3_4__n & N_54_i);
+
+N_29_i = (!N_29);
+
+N_52_i = (!N_52);
+
+N_21_i = (N_29_i & N_52_i);
+
+N_28_i = (!N_28);
+
+N_45_i = (!N_45);
+
+N_46_i = (!N_46);
+
+N_49_i = (!N_49);
+
+N_12_i = (N_12_i_1 & N_12_i_2);
+
+N_30_i = (!N_30);
+
+N_16_i = (N_16_i_1 & N_30_i);
+
+N_20_i = (!N_20);
+
+N_58_i = (!N_58);
+
+N_60_i = (!N_60);
+
+N_19_i = (N_19_i_1 & N_60_i);
+
+s_1_0_1_4__n = (N_64_i & e_i_0__n);
+
+s_1_0_2_4__n = (N_10_i & N_53_i);
+
+s_1_0_3_4__n = (s_1_0_1_4__n & s_1_0_2_4__n);
+
+N_12_i_1 = (N_28_i & N_45_i);
+
+N_12_i_2 = (N_46_i & N_49_i);
+
+N_16_i_1 = (N_28_i & N_29_i);
+
+N_19_i_1 = (N_20_i & N_58_i);
+
+N_61_1 = (e_c_3__n & e_i_1__n);
+
+N_52_1 = (N_15_i_i_0 & e_c_0__n);
+
+N_49_1 = (e_c_0__n & e_c_2__n);
+
+N_46_1 = (N_13_0 & e_c_3__n);
+
+N_30_1 = (e_c_0__n & N_13_0);
+
+N_28_1 = (N_13 & e_c_0__n);
+
+N_60_1 = (e_i_0__n & N_13_0);
+
+N_58_1 = (e_i_0__n & N_10_i_i_0);
+
+
+Reverse-Polarity Equations:
+
+!S_6_ = (!N_21_i);
+
+!S_5_ = (!N_19_i);
+
+!S_4_ = (!s_1_4__n);
+
+!S_3_ = (!N_16_i);
+
+!S_2_ = (!N_14_i);
+
+!S_1_ = (!N_12_i);
+
+!S_0_ = (!s_1_0__n);
+
+!e_c_0__n = (!E_0_);
+
+!e_c_1__n = (!E_1_);
+
+!e_c_2__n = (!E_2_);
+
+!e_c_3__n = (!E_3_);
+
+!e_c_4__n = (!E_4_);
+

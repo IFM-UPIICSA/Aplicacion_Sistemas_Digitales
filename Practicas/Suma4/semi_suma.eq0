@@ -1,0 +1,98 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design semi_suma created Thu Nov 09 04:56:48 2017
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   S_1_ 
+   1/1        1        1    Pin   Cs 
+   1/1        1        1    Pin   S_0_ 
+   2          2        1    Node  s_1_0__n 
+   2          2        1    Node  s_1_1__n 
+   1          2        1    Node  C 
+   1          2        1    Node  un7_cs 
+   1          2        1    Node  cs 
+   1          2        1    Node  un4_cs 
+   1/1        1        1    Node  a_c_0__n 
+   1/1        1        1    Node  a_c_1__n 
+   1/1        1        1    Node  b_c_0__n 
+   1/1        1        1    Node  b_c_1__n 
+   1          1        1    Node  Cs_c 
+   1          1        1    Node  cs_i 
+   1          1        1    Node  un4_cs_i 
+   1          1        1    Node  un7_cs_i 
+   1          2        1    Node  Cs_c_0 
+   1          2        1    Node  Cs_c_0_1 
+   2          2        1    Node  s_1_1_1__n 
+=========
+  23/7          Best P-Term Total: 23
+                       Total Pins: 7
+                      Total Nodes: 17
+            Average P-Term/Output: 1
+
+
+Equations:
+
+S_1_ = (s_1_1__n);
+
+Cs = (Cs_c);
+
+S_0_ = (s_1_0__n);
+
+s_1_0__n = (!a_c_0__n & b_c_0__n
+     # a_c_0__n & !b_c_0__n);
+
+s_1_1__n = (!s_1_1_1__n & b_c_1__n
+     # s_1_1_1__n & !b_c_1__n);
+
+C = (a_c_0__n & b_c_0__n);
+
+un7_cs = (a_c_1__n & C);
+
+cs = (b_c_1__n & C);
+
+un4_cs = (a_c_1__n & b_c_1__n);
+
+a_c_0__n = (A_0_);
+
+a_c_1__n = (A_1_);
+
+b_c_0__n = (B_0_);
+
+b_c_1__n = (B_1_);
+
+Cs_c = (!Cs_c_0);
+
+cs_i = (!cs);
+
+un4_cs_i = (!un4_cs);
+
+un7_cs_i = (!un7_cs);
+
+Cs_c_0 = (Cs_c_0_1 & un7_cs_i);
+
+Cs_c_0_1 = (cs_i & un4_cs_i);
+
+s_1_1_1__n = (!C & a_c_1__n
+     # C & !a_c_1__n);
+
+
+Reverse-Polarity Equations:
+
+!S_1_ = (!s_1_1__n);
+
+!Cs = (!Cs_c);
+
+!S_0_ = (!s_1_0__n);
+
+!a_c_0__n = (!A_0_);
+
+!a_c_1__n = (!A_1_);
+
+!b_c_0__n = (!B_0_);
+
+!b_c_1__n = (!B_1_);
+

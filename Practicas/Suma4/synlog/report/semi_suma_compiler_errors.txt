@@ -1,0 +1,4 @@
+@E: CD126 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_suma.vhd":14:0:14:0|Expecting identifier
+@E: CD214 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\suma4\semi_suma.vhd":32:0:32:0|Not a concurrent statement
+@E|Parse errors encountered - exiting
+

@@ -6,7 +6,7 @@
 #Implementation: practica 6
 
 $ Start of Compile
-#Thu Oct 19 09:59:11 2017
+#Wed Nov 08 20:48:36 2017
 
 Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
@@ -14,7 +14,27 @@ Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated document
 
 @N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
 @N:"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.vhd":6:7:6:12|Top entity is set to codigo.
+File C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\location.map changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\snps_haps_pkg.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std1164.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\numeric.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\umr_capim.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\arith.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\unsigned.vhd changed - recompiling
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.vhd changed - recompiling
 VHDL syntax check successful!
+File C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\location.map changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\snps_haps_pkg.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std1164.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\numeric.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\umr_capim.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\arith.vhd changed - recompiling
+File C:\ispLEVER_Classic2_0\synpbase\lib\vhd\unsigned.vhd changed - recompiling
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.vhd changed - recompiling
 @N: CD630 :"C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\codigo.vhd":6:7:6:12|Synthesizing work.codigo.behavioral 
 Post processing for work.codigo.behavioral
 @END
@@ -22,16 +42,18 @@ Post processing for work.codigo.behavioral
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Oct 19 09:59:11 2017
+# Wed Nov 08 20:48:37 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
+File C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe changed - recompiling
+File C:\users\ismae\documents\github repos\aplicacion_sistemas_digitales\practicas\practica 6\synwork\codigo_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Oct 19 09:59:12 2017
+# Wed Nov 08 20:48:40 2017
 
 ###########################################################]
 Map & Optimize Report
@@ -46,9 +68,9 @@ Resource Usage Report
 Simple gate primitives:
 IBUF            8 uses
 OBUF            5 uses
-INV             10 uses
-AND2            13 uses
-XOR2            6 uses
+XOR2            7 uses
+INV             12 uses
+AND2            16 uses
 
 
 @N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
@@ -58,6 +80,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 103MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Oct 19 09:59:13 2017
+# Wed Nov 08 20:48:41 2017
 
 ###########################################################]

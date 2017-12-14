@@ -1,0 +1,52 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Thu Nov 09 03:21:46 2017
+#$ MODULE deco2
+#$ PINS 12 E_4_:5'ke'  S_6_:20'ke'  E_3_:4'ke'  E_2_:3'ke'  E_1_:2'ke'  E_0_:1'ke'  S_5_:19'ke'  S_4_:18'ke'  S_3_:17'ke'  S_2_:16'ke'  S_1_:15'ke'  S_0_:14'ke' 
+#$ NODES 1 e_0__n
+
+.model deco2
+.inputs E_4_.BLIF E_3_.BLIF E_2_.BLIF E_1_.BLIF E_0_.BLIF e_0__n.BLIF
+.outputs S_6_ S_5_ S_4_ S_3_ S_2_ S_1_ S_0_ e_0__n
+.names E_4_.BLIF E_3_.BLIF E_2_.BLIF S_6_
+11- 1
+1-1 1
+-00 0
+0-- 0
+.names E_4_.BLIF E_3_.BLIF E_2_.BLIF E_1_.BLIF S_5_
+-11- 1
+1--- 1
+-1-1 1
+0-00 0
+00-- 0
+.names E_4_.BLIF E_3_.BLIF E_2_.BLIF E_1_.BLIF S_4_
+100- 1
+011- 1
+-111 1
+01-1 1
+0-00 0
+11-0 0
+110- 0
+-01- 0
+00-- 0
+.names E_4_.BLIF E_3_.BLIF E_2_.BLIF S_3_
+11- 1
+1-1 1
+-00 0
+0-- 0
+.names E_4_.BLIF E_3_.BLIF E_2_.BLIF E_1_.BLIF S_2_
+11-0 1
+101- 1
+110- 1
+-111 0
+-00- 0
+0--- 0
+.names S_1_
+.names E_4_.BLIF E_3_.BLIF E_2_.BLIF S_0_
+11- 1
+1-1 1
+-00 0
+0-- 0
+.names E_0_.BLIF e_0__n
+1 1
+0 0
+.end

@@ -1,0 +1,5 @@
+Warning 4045: The preassignment of X to pin 1 cannot be maintained - preassignment overridden.
+$DEVICE         p22v10g    fit contador_restador_7.tt3
+$PINS    6  Q_2_:19   Q_1_:18   Q_0_:17   Q_3_:20   X:2   Clock:1   
+--------------------------------------------------------------
+
